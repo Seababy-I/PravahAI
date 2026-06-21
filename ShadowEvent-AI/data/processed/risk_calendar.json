@@ -1,0 +1,629 @@
+{
+  "matrix": {
+    "Monday": {
+      "early_morning": {
+        "risk_level": "Low",
+        "score": 0.2751,
+        "top_corridor": "Non-corridor",
+        "incident_count": 190,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "morning": {
+        "risk_level": "Low",
+        "score": 0.1822,
+        "top_corridor": "Non-corridor",
+        "incident_count": 144,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "afternoon": {
+        "risk_level": "Low",
+        "score": 0.0855,
+        "top_corridor": "Non-corridor",
+        "incident_count": 58,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "evening": {
+        "risk_level": "Low",
+        "score": 0.0279,
+        "top_corridor": "Bellary Road 1",
+        "incident_count": 14,
+        "top_causes": [
+          "vehicle_breakdown",
+          "accident",
+          "vehicle_breakdown"
+        ]
+      },
+      "night": {
+        "risk_level": "Low",
+        "score": 0.0112,
+        "top_corridor": "Non-corridor",
+        "incident_count": 14,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "others"
+        ]
+      },
+      "midnight": {
+        "risk_level": "High",
+        "score": 0.6431,
+        "top_corridor": "Non-corridor",
+        "incident_count": 482,
+        "top_causes": [
+          "vehicle_breakdown",
+          "construction",
+          "vehicle_breakdown"
+        ]
+      }
+    },
+    "Tuesday": {
+      "early_morning": {
+        "risk_level": "Medium",
+        "score": 0.4089,
+        "top_corridor": "Non-corridor",
+        "incident_count": 238,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "morning": {
+        "risk_level": "Medium",
+        "score": 0.5595,
+        "top_corridor": "Non-corridor",
+        "incident_count": 378,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "afternoon": {
+        "risk_level": "Low",
+        "score": 0.1561,
+        "top_corridor": "Non-corridor",
+        "incident_count": 87,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "evening": {
+        "risk_level": "Low",
+        "score": 0.0074,
+        "top_corridor": "Non-corridor",
+        "incident_count": 8,
+        "top_causes": [
+          "vehicle_breakdown",
+          "construction",
+          "construction"
+        ]
+      },
+      "night": {
+        "risk_level": "Low",
+        "score": 0.0483,
+        "top_corridor": "Non-corridor",
+        "incident_count": 26,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "midnight": {
+        "risk_level": "High",
+        "score": 1.0,
+        "top_corridor": "Non-corridor",
+        "incident_count": 496,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      }
+    },
+    "Wednesday": {
+      "early_morning": {
+        "risk_level": "Low",
+        "score": 0.223,
+        "top_corridor": "Non-corridor",
+        "incident_count": 186,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "morning": {
+        "risk_level": "Medium",
+        "score": 0.4721,
+        "top_corridor": "Non-corridor",
+        "incident_count": 334,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "afternoon": {
+        "risk_level": "Low",
+        "score": 0.1859,
+        "top_corridor": "Non-corridor",
+        "incident_count": 118,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "evening": {
+        "risk_level": "Low",
+        "score": 0.0558,
+        "top_corridor": "Non-corridor",
+        "incident_count": 23,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "construction"
+        ]
+      },
+      "night": {
+        "risk_level": "Low",
+        "score": 0.0297,
+        "top_corridor": "Non-corridor",
+        "incident_count": 14,
+        "top_causes": [
+          "vehicle_breakdown",
+          "others",
+          "vehicle_breakdown"
+        ]
+      },
+      "midnight": {
+        "risk_level": "High",
+        "score": 0.6506,
+        "top_corridor": "Non-corridor",
+        "incident_count": 482,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "construction"
+        ]
+      }
+    },
+    "Thursday": {
+      "early_morning": {
+        "risk_level": "Low",
+        "score": 0.2677,
+        "top_corridor": "Non-corridor",
+        "incident_count": 222,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "morning": {
+        "risk_level": "High",
+        "score": 0.7695,
+        "top_corridor": "Non-corridor",
+        "incident_count": 466,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "afternoon": {
+        "risk_level": "Low",
+        "score": 0.1859,
+        "top_corridor": "Non-corridor",
+        "incident_count": 119,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "evening": {
+        "risk_level": "Low",
+        "score": 0.0743,
+        "top_corridor": "Non-corridor",
+        "incident_count": 28,
+        "top_causes": [
+          "accident",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "night": {
+        "risk_level": "Low",
+        "score": 0.0335,
+        "top_corridor": "Hosur Road",
+        "incident_count": 18,
+        "top_causes": [
+          "vehicle_breakdown",
+          "others",
+          "accident"
+        ]
+      },
+      "midnight": {
+        "risk_level": "High",
+        "score": 0.7435,
+        "top_corridor": "Non-corridor",
+        "incident_count": 484,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      }
+    },
+    "Friday": {
+      "early_morning": {
+        "risk_level": "Medium",
+        "score": 0.355,
+        "top_corridor": "Non-corridor",
+        "incident_count": 222,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "morning": {
+        "risk_level": "Medium",
+        "score": 0.461,
+        "top_corridor": "Non-corridor",
+        "incident_count": 327,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "afternoon": {
+        "risk_level": "Low",
+        "score": 0.2305,
+        "top_corridor": "Non-corridor",
+        "incident_count": 158,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "evening": {
+        "risk_level": "Low",
+        "score": 0.0595,
+        "top_corridor": "Non-corridor",
+        "incident_count": 22,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "night": {
+        "risk_level": "Low",
+        "score": 0.0279,
+        "top_corridor": "Bellary Road 2",
+        "incident_count": 18,
+        "top_causes": [
+          "vehicle_breakdown",
+          "accident",
+          "vehicle_breakdown"
+        ]
+      },
+      "midnight": {
+        "risk_level": "High",
+        "score": 0.6245,
+        "top_corridor": "Non-corridor",
+        "incident_count": 486,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "construction"
+        ]
+      }
+    },
+    "Saturday": {
+      "early_morning": {
+        "risk_level": "Medium",
+        "score": 0.3532,
+        "top_corridor": "Non-corridor",
+        "incident_count": 252,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "morning": {
+        "risk_level": "High",
+        "score": 0.6729,
+        "top_corridor": "Non-corridor",
+        "incident_count": 425,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "pot_holes"
+        ]
+      },
+      "afternoon": {
+        "risk_level": "Low",
+        "score": 0.197,
+        "top_corridor": "Non-corridor",
+        "incident_count": 108,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "evening": {
+        "risk_level": "Low",
+        "score": 0.0297,
+        "top_corridor": "Non-corridor",
+        "incident_count": 27,
+        "top_causes": [
+          "vehicle_breakdown",
+          "construction",
+          "vehicle_breakdown"
+        ]
+      },
+      "night": {
+        "risk_level": "Low",
+        "score": 0.0446,
+        "top_corridor": "Non-corridor",
+        "incident_count": 19,
+        "top_causes": [
+          "vehicle_breakdown",
+          "tree_fall",
+          "vehicle_breakdown"
+        ]
+      },
+      "midnight": {
+        "risk_level": "Medium",
+        "score": 0.5725,
+        "top_corridor": "Non-corridor",
+        "incident_count": 386,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      }
+    },
+    "Sunday": {
+      "early_morning": {
+        "risk_level": "Medium",
+        "score": 0.3197,
+        "top_corridor": "Non-corridor",
+        "incident_count": 241,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "morning": {
+        "risk_level": "Medium",
+        "score": 0.4126,
+        "top_corridor": "Non-corridor",
+        "incident_count": 291,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "afternoon": {
+        "risk_level": "Low",
+        "score": 0.171,
+        "top_corridor": "Non-corridor",
+        "incident_count": 123,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      },
+      "evening": {
+        "risk_level": "Low",
+        "score": 0.0335,
+        "top_corridor": "Non-corridor",
+        "incident_count": 24,
+        "top_causes": [
+          "vehicle_breakdown",
+          "construction",
+          "vehicle_breakdown"
+        ]
+      },
+      "night": {
+        "risk_level": "Low",
+        "score": 0.0112,
+        "top_corridor": "Non-corridor",
+        "incident_count": 10,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "accident"
+        ]
+      },
+      "midnight": {
+        "risk_level": "Medium",
+        "score": 0.3457,
+        "top_corridor": "Non-corridor",
+        "incident_count": 236,
+        "top_causes": [
+          "vehicle_breakdown",
+          "vehicle_breakdown",
+          "vehicle_breakdown"
+        ]
+      }
+    }
+  },
+  "peaks": {
+    "Monday": {
+      "peak_bucket": "midnight",
+      "risk_level": "High",
+      "score": 0.6431,
+      "top_corridor": "Non-corridor"
+    },
+    "Tuesday": {
+      "peak_bucket": "midnight",
+      "risk_level": "High",
+      "score": 1.0,
+      "top_corridor": "Non-corridor"
+    },
+    "Wednesday": {
+      "peak_bucket": "midnight",
+      "risk_level": "High",
+      "score": 0.6506,
+      "top_corridor": "Non-corridor"
+    },
+    "Thursday": {
+      "peak_bucket": "morning",
+      "risk_level": "High",
+      "score": 0.7695,
+      "top_corridor": "Non-corridor"
+    },
+    "Friday": {
+      "peak_bucket": "midnight",
+      "risk_level": "High",
+      "score": 0.6245,
+      "top_corridor": "Non-corridor"
+    },
+    "Saturday": {
+      "peak_bucket": "morning",
+      "risk_level": "High",
+      "score": 0.6729,
+      "top_corridor": "Non-corridor"
+    },
+    "Sunday": {
+      "peak_bucket": "morning",
+      "risk_level": "Medium",
+      "score": 0.4126,
+      "top_corridor": "Non-corridor"
+    }
+  },
+  "top_risk_slots": [
+    {
+      "day": "Tuesday",
+      "time_bucket": "midnight",
+      "corridor": "Non-corridor",
+      "score": 1.0,
+      "incident_count": 206
+    },
+    {
+      "day": "Thursday",
+      "time_bucket": "morning",
+      "corridor": "Non-corridor",
+      "score": 0.7695,
+      "incident_count": 205
+    },
+    {
+      "day": "Thursday",
+      "time_bucket": "midnight",
+      "corridor": "Non-corridor",
+      "score": 0.7435,
+      "incident_count": 195
+    },
+    {
+      "day": "Saturday",
+      "time_bucket": "morning",
+      "corridor": "Non-corridor",
+      "score": 0.6729,
+      "incident_count": 164
+    },
+    {
+      "day": "Wednesday",
+      "time_bucket": "midnight",
+      "corridor": "Non-corridor",
+      "score": 0.6506,
+      "incident_count": 171
+    },
+    {
+      "day": "Friday",
+      "time_bucket": "midnight",
+      "corridor": "Non-corridor",
+      "score": 0.6245,
+      "incident_count": 163
+    },
+    {
+      "day": "Monday",
+      "time_bucket": "midnight",
+      "corridor": "Non-corridor",
+      "score": 0.6431,
+      "incident_count": 169
+    }
+  ],
+  "day_risk": {
+    "Monday": {
+      "avg_score": 0.0514,
+      "high_risk_count": 1,
+      "overall_risk": "Low"
+    },
+    "Tuesday": {
+      "avg_score": 0.0674,
+      "high_risk_count": 1,
+      "overall_risk": "Low"
+    },
+    "Wednesday": {
+      "avg_score": 0.0638,
+      "high_risk_count": 1,
+      "overall_risk": "Low"
+    },
+    "Thursday": {
+      "avg_score": 0.0663,
+      "high_risk_count": 2,
+      "overall_risk": "Low"
+    },
+    "Friday": {
+      "avg_score": 0.0626,
+      "high_risk_count": 1,
+      "overall_risk": "Low"
+    },
+    "Saturday": {
+      "avg_score": 0.0645,
+      "high_risk_count": 1,
+      "overall_risk": "Low"
+    },
+    "Sunday": {
+      "avg_score": 0.0501,
+      "high_risk_count": 0,
+      "overall_risk": "Low"
+    }
+  },
+  "time_buckets": [
+    "early_morning",
+    "morning",
+    "afternoon",
+    "evening",
+    "night",
+    "midnight"
+  ],
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ]
+}

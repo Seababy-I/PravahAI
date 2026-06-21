@@ -1,0 +1,11 @@
+# Environment files
+.env
+.env.*
+ShadowEvent-AI/backend/.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Database
+*.db

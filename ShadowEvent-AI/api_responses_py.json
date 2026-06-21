@@ -1,0 +1,3054 @@
+{
+  "shadow_events": {
+    "total": 666,
+    "offset": 0,
+    "limit": 1,
+    "data": [
+      {
+        "shadow_event_id": "SE0000",
+        "corridor": "Non-corridor",
+        "day_of_week": 1.0,
+        "day_name": "Tuesday",
+        "time_bucket": "midnight",
+        "incident_count": 206,
+        "weighted_count": 269.0,
+        "severity_sum": 337.1,
+        "top_cause": "vehicle_breakdown",
+        "lat_centroid": 12.9656018506,
+        "lon_centroid": 77.5991821656,
+        "weeks_present": 21,
+        "accident_count": 63,
+        "recurrence_score": 0.913,
+        "frequency_score": 1.0,
+        "severity_score": 1.0,
+        "risk_score": 1.0,
+        "probability_score": 1.0,
+        "seri": 96.52,
+        "seri_band": "Critical",
+        "risk_level": "High",
+        "corridor_relative_score": 1.0
+      }
+    ]
+  },
+  "seri": {
+    "total": 624,
+    "offset": 0,
+    "limit": 100,
+    "data": [
+      {
+        "shadow_event_id": "SE0022",
+        "corridor": "Mysore Road",
+        "day_of_week": 2.0,
+        "day_name": "Wednesday",
+        "time_bucket": "midnight",
+        "incident_count": 43,
+        "weighted_count": 64.5,
+        "severity_sum": 43.0,
+        "top_cause": "vehicle_breakdown",
+        "lat_centroid": 12.9565720663,
+        "lon_centroid": 77.5566392379,
+        "weeks_present": 19,
+        "accident_count": 0,
+        "recurrence_score": 0.8261,
+        "frequency_score": 0.2087,
+        "severity_score": 0.1276,
+        "risk_score": 0.2398,
+        "probability_score": 0.2398,
+        "seri": 43.94,
+        "seri_band": "Medium",
+        "risk_level": "Low",
+        "corridor_relative_score": 0.9416
+      },
+      {
+        "shadow_event_id": "SE0023",
+        "corridor": "Mysore Road",
+        "day_of_week": 1.0,
+        "day_name": "Tuesday",
+        "time_bucket": "midnight",
+        "incident_count": 46,
+        "weighted_count": 68.5,
+        "severity_sum": 46.2,
+        "top_cause": "vehicle_breakdown",
+        "lat_centroid": 12.9569478422,
+        "lon_centroid": 77.5575042596,
+        "weeks_present": 18,
+        "accident_count": 0,
+        "recurrence_score": 0.7826,
+        "frequency_score": 0.2233,
+        "severity_score": 0.1371,
+        "risk_score": 0.2546,
+        "probability_score": 0.2546,
+        "seri": 42.98,
+        "seri_band": "Medium",
+        "risk_level": "Low",
+        "corridor_relative_score": 1.0
+      },
+      "..."
+    ],
+    "formula": "SERI = 0.4\u00d7recurrence_score + 0.4\u00d7frequency_score + 0.2\u00d7severity_score (\u00d7100)",
+    "scale": "0\u2013100",
+    "bands": {
+      "Low": "0\u201330",
+      "Medium": "31\u201360",
+      "High": "61\u201380",
+      "Critical": "81\u2013100"
+    }
+  },
+  "risk_calendar": {
+    "matrix": {
+      "Monday": {
+        "early_morning": {
+          "risk_level": "Low",
+          "score": 0.2751,
+          "top_corridor": "Non-corridor",
+          "incident_count": 190,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "morning": {
+          "risk_level": "Low",
+          "score": 0.1822,
+          "top_corridor": "Non-corridor",
+          "incident_count": 144,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "afternoon": {
+          "risk_level": "Low",
+          "score": 0.0855,
+          "top_corridor": "Non-corridor",
+          "incident_count": 58,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "evening": {
+          "risk_level": "Low",
+          "score": 0.0279,
+          "top_corridor": "Bellary Road 1",
+          "incident_count": 14,
+          "top_causes": [
+            "vehicle_breakdown",
+            "accident",
+            "vehicle_breakdown"
+          ]
+        },
+        "night": {
+          "risk_level": "Low",
+          "score": 0.0112,
+          "top_corridor": "Non-corridor",
+          "incident_count": 14,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "others"
+          ]
+        },
+        "midnight": {
+          "risk_level": "High",
+          "score": 0.6431,
+          "top_corridor": "Non-corridor",
+          "incident_count": 482,
+          "top_causes": [
+            "vehicle_breakdown",
+            "construction",
+            "vehicle_breakdown"
+          ]
+        }
+      },
+      "Tuesday": {
+        "early_morning": {
+          "risk_level": "Medium",
+          "score": 0.4089,
+          "top_corridor": "Non-corridor",
+          "incident_count": 238,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "morning": {
+          "risk_level": "Medium",
+          "score": 0.5595,
+          "top_corridor": "Non-corridor",
+          "incident_count": 378,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "afternoon": {
+          "risk_level": "Low",
+          "score": 0.1561,
+          "top_corridor": "Non-corridor",
+          "incident_count": 87,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "evening": {
+          "risk_level": "Low",
+          "score": 0.0074,
+          "top_corridor": "Non-corridor",
+          "incident_count": 8,
+          "top_causes": [
+            "vehicle_breakdown",
+            "construction",
+            "construction"
+          ]
+        },
+        "night": {
+          "risk_level": "Low",
+          "score": 0.0483,
+          "top_corridor": "Non-corridor",
+          "incident_count": 26,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "midnight": {
+          "risk_level": "High",
+          "score": 1.0,
+          "top_corridor": "Non-corridor",
+          "incident_count": 496,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        }
+      },
+      "Wednesday": {
+        "early_morning": {
+          "risk_level": "Low",
+          "score": 0.223,
+          "top_corridor": "Non-corridor",
+          "incident_count": 186,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "morning": {
+          "risk_level": "Medium",
+          "score": 0.4721,
+          "top_corridor": "Non-corridor",
+          "incident_count": 334,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "afternoon": {
+          "risk_level": "Low",
+          "score": 0.1859,
+          "top_corridor": "Non-corridor",
+          "incident_count": 118,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "evening": {
+          "risk_level": "Low",
+          "score": 0.0558,
+          "top_corridor": "Non-corridor",
+          "incident_count": 23,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "construction"
+          ]
+        },
+        "night": {
+          "risk_level": "Low",
+          "score": 0.0297,
+          "top_corridor": "Non-corridor",
+          "incident_count": 14,
+          "top_causes": [
+            "vehicle_breakdown",
+            "others",
+            "vehicle_breakdown"
+          ]
+        },
+        "midnight": {
+          "risk_level": "High",
+          "score": 0.6506,
+          "top_corridor": "Non-corridor",
+          "incident_count": 482,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "construction"
+          ]
+        }
+      },
+      "Thursday": {
+        "early_morning": {
+          "risk_level": "Low",
+          "score": 0.2677,
+          "top_corridor": "Non-corridor",
+          "incident_count": 222,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "morning": {
+          "risk_level": "High",
+          "score": 0.7695,
+          "top_corridor": "Non-corridor",
+          "incident_count": 466,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "afternoon": {
+          "risk_level": "Low",
+          "score": 0.1859,
+          "top_corridor": "Non-corridor",
+          "incident_count": 119,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "evening": {
+          "risk_level": "Low",
+          "score": 0.0743,
+          "top_corridor": "Non-corridor",
+          "incident_count": 28,
+          "top_causes": [
+            "accident",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "night": {
+          "risk_level": "Low",
+          "score": 0.0335,
+          "top_corridor": "Hosur Road",
+          "incident_count": 18,
+          "top_causes": [
+            "vehicle_breakdown",
+            "others",
+            "accident"
+          ]
+        },
+        "midnight": {
+          "risk_level": "High",
+          "score": 0.7435,
+          "top_corridor": "Non-corridor",
+          "incident_count": 484,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        }
+      },
+      "Friday": {
+        "early_morning": {
+          "risk_level": "Medium",
+          "score": 0.355,
+          "top_corridor": "Non-corridor",
+          "incident_count": 222,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "morning": {
+          "risk_level": "Medium",
+          "score": 0.461,
+          "top_corridor": "Non-corridor",
+          "incident_count": 327,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "afternoon": {
+          "risk_level": "Low",
+          "score": 0.2305,
+          "top_corridor": "Non-corridor",
+          "incident_count": 158,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "evening": {
+          "risk_level": "Low",
+          "score": 0.0595,
+          "top_corridor": "Non-corridor",
+          "incident_count": 22,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "night": {
+          "risk_level": "Low",
+          "score": 0.0279,
+          "top_corridor": "Bellary Road 2",
+          "incident_count": 18,
+          "top_causes": [
+            "vehicle_breakdown",
+            "accident",
+            "vehicle_breakdown"
+          ]
+        },
+        "midnight": {
+          "risk_level": "High",
+          "score": 0.6245,
+          "top_corridor": "Non-corridor",
+          "incident_count": 486,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "construction"
+          ]
+        }
+      },
+      "Saturday": {
+        "early_morning": {
+          "risk_level": "Medium",
+          "score": 0.3532,
+          "top_corridor": "Non-corridor",
+          "incident_count": 252,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "morning": {
+          "risk_level": "High",
+          "score": 0.6729,
+          "top_corridor": "Non-corridor",
+          "incident_count": 425,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "pot_holes"
+          ]
+        },
+        "afternoon": {
+          "risk_level": "Low",
+          "score": 0.197,
+          "top_corridor": "Non-corridor",
+          "incident_count": 108,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "evening": {
+          "risk_level": "Low",
+          "score": 0.0297,
+          "top_corridor": "Non-corridor",
+          "incident_count": 27,
+          "top_causes": [
+            "vehicle_breakdown",
+            "construction",
+            "vehicle_breakdown"
+          ]
+        },
+        "night": {
+          "risk_level": "Low",
+          "score": 0.0446,
+          "top_corridor": "Non-corridor",
+          "incident_count": 19,
+          "top_causes": [
+            "vehicle_breakdown",
+            "tree_fall",
+            "vehicle_breakdown"
+          ]
+        },
+        "midnight": {
+          "risk_level": "Medium",
+          "score": 0.5725,
+          "top_corridor": "Non-corridor",
+          "incident_count": 386,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        }
+      },
+      "Sunday": {
+        "early_morning": {
+          "risk_level": "Medium",
+          "score": 0.3197,
+          "top_corridor": "Non-corridor",
+          "incident_count": 241,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "morning": {
+          "risk_level": "Medium",
+          "score": 0.4126,
+          "top_corridor": "Non-corridor",
+          "incident_count": 291,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "afternoon": {
+          "risk_level": "Low",
+          "score": 0.171,
+          "top_corridor": "Non-corridor",
+          "incident_count": 123,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        },
+        "evening": {
+          "risk_level": "Low",
+          "score": 0.0335,
+          "top_corridor": "Non-corridor",
+          "incident_count": 24,
+          "top_causes": [
+            "vehicle_breakdown",
+            "construction",
+            "vehicle_breakdown"
+          ]
+        },
+        "night": {
+          "risk_level": "Low",
+          "score": 0.0112,
+          "top_corridor": "Non-corridor",
+          "incident_count": 10,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "accident"
+          ]
+        },
+        "midnight": {
+          "risk_level": "Medium",
+          "score": 0.3457,
+          "top_corridor": "Non-corridor",
+          "incident_count": 236,
+          "top_causes": [
+            "vehicle_breakdown",
+            "vehicle_breakdown",
+            "vehicle_breakdown"
+          ]
+        }
+      }
+    },
+    "peaks": {
+      "Monday": {
+        "peak_bucket": "midnight",
+        "risk_level": "High",
+        "score": 0.6431,
+        "top_corridor": "Non-corridor"
+      },
+      "Tuesday": {
+        "peak_bucket": "midnight",
+        "risk_level": "High",
+        "score": 1.0,
+        "top_corridor": "Non-corridor"
+      },
+      "Wednesday": {
+        "peak_bucket": "midnight",
+        "risk_level": "High",
+        "score": 0.6506,
+        "top_corridor": "Non-corridor"
+      },
+      "Thursday": {
+        "peak_bucket": "morning",
+        "risk_level": "High",
+        "score": 0.7695,
+        "top_corridor": "Non-corridor"
+      },
+      "Friday": {
+        "peak_bucket": "midnight",
+        "risk_level": "High",
+        "score": 0.6245,
+        "top_corridor": "Non-corridor"
+      },
+      "Saturday": {
+        "peak_bucket": "morning",
+        "risk_level": "High",
+        "score": 0.6729,
+        "top_corridor": "Non-corridor"
+      },
+      "Sunday": {
+        "peak_bucket": "morning",
+        "risk_level": "Medium",
+        "score": 0.4126,
+        "top_corridor": "Non-corridor"
+      }
+    },
+    "top_risk_slots": [
+      {
+        "day": "Tuesday",
+        "time_bucket": "midnight",
+        "corridor": "Non-corridor",
+        "score": 1.0,
+        "incident_count": 206
+      },
+      {
+        "day": "Thursday",
+        "time_bucket": "morning",
+        "corridor": "Non-corridor",
+        "score": 0.7695,
+        "incident_count": 205
+      },
+      "..."
+    ],
+    "day_risk": {
+      "Monday": {
+        "avg_score": 0.0514,
+        "high_risk_count": 1,
+        "overall_risk": "Low"
+      },
+      "Tuesday": {
+        "avg_score": 0.0674,
+        "high_risk_count": 1,
+        "overall_risk": "Low"
+      },
+      "Wednesday": {
+        "avg_score": 0.0638,
+        "high_risk_count": 1,
+        "overall_risk": "Low"
+      },
+      "Thursday": {
+        "avg_score": 0.0663,
+        "high_risk_count": 2,
+        "overall_risk": "Low"
+      },
+      "Friday": {
+        "avg_score": 0.0626,
+        "high_risk_count": 1,
+        "overall_risk": "Low"
+      },
+      "Saturday": {
+        "avg_score": 0.0645,
+        "high_risk_count": 1,
+        "overall_risk": "Low"
+      },
+      "Sunday": {
+        "avg_score": 0.0501,
+        "high_risk_count": 0,
+        "overall_risk": "Low"
+      }
+    },
+    "time_buckets": [
+      "early_morning",
+      "morning",
+      "..."
+    ],
+    "days": [
+      "Monday",
+      "Tuesday",
+      "..."
+    ]
+  },
+  "hotspots": {
+    "total": 1,
+    "data": [
+      {
+        "hotspot_id": "HS001",
+        "corridor": "Mysore Road",
+        "total_incidents": 743,
+        "weighted_score": 1131.5,
+        "lat": 12.9577898485,
+        "lon": 77.5636516975,
+        "top_cause": "vehicle_breakdown",
+        "accident_count": 15,
+        "high_priority_count": 741,
+        "hotspot_score": 0.3452,
+        "risk_level": "Medium"
+      }
+    ]
+  },
+  "heatmap": {
+    "layer": "incidents",
+    "points": [
+      [
+        13.0400041,
+        77.5180991,
+        1.5
+      ],
+      [
+        12.9218755,
+        77.6451585,
+        1.5
+      ],
+      "..."
+    ]
+  },
+  "search": {
+    "total": 8139,
+    "offset": 0,
+    "limit": 1,
+    "data": [
+      {
+        "id": "FKID000000",
+        "event_type": "unplanned",
+        "event_cause": "vehicle_breakdown",
+        "corridor": "Tumkur Road",
+        "zone": "West Zone 1",
+        "address": "Mumbai Bengaluru Highway, Jalahalli Cross Junction, Peenya, Bengaluru, Karnataka. Pin-560058 (India)",
+        "priority": "High",
+        "status": "closed",
+        "veh_type": "lcv",
+        "day_name": "Thursday",
+        "hour_ist": 22,
+        "time_bucket_ist": "night",
+        "month_name": "March",
+        "latitude": 13.0400041,
+        "longitude": 77.5180991,
+        "start_datetime": "2024-03-07 17:01:48.111000+00:00",
+        "risk_weight": 1.5,
+        "recurrence_score": 0.0435,
+        "date": "2024-03-07",
+        "start_datetime_ist": "07 Mar 2024 22:31 IST"
+      }
+    ]
+  },
+  "forecast": {
+    "label": "Historical Pattern-Based Forecast \u2014 NOT real-time prediction",
+    "metadata": {
+      "total_slots": 666,
+      "formula": "0.7 \u00d7 recurrence_score + 0.3 \u00d7 recent_trend_score",
+      "recent_weeks": [
+        "52_2023",
+        "5_2024",
+        "6_2024",
+        "7_2024"
+      ],
+      "holdout_weeks": [
+        "8_2024",
+        "9_2024"
+      ],
+      "validation_mae": 0.1375,
+      "validation_covered_slots": 281,
+      "label": "Historical Pattern-Based Forecast \u2014 NOT real-time prediction",
+      "assumption": "Patterns from the 23-week dataset (Nov 2023\u2013Apr 2024) repeat in the future.",
+      "limitation": "Cannot account for one-off events, weather, or policy changes."
+    },
+    "weekly_view": {
+      "Monday": {
+        "early_morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.7496,
+              "forecast_band": "Critical",
+              "seri": 57.1,
+              "incident_count": 72,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4461,
+              "forecast_band": "Medium",
+              "seri": 29.85,
+              "incident_count": 21,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.4156,
+              "forecast_band": "Medium",
+              "seri": 26.95,
+              "incident_count": 17,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.3548,
+              "forecast_band": "Medium",
+              "seri": 22.92,
+              "incident_count": 15,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Magadi Road",
+              "forecast_score": 0.253,
+              "forecast_band": "Medium",
+              "seri": 14.95,
+              "incident_count": 11,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            }
+          ],
+          "max_score": 0.7496,
+          "risk_level": "Critical"
+        },
+        "morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.6583,
+              "forecast_band": "High",
+              "seri": 45.47,
+              "incident_count": 49,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2667
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.4456,
+              "forecast_band": "Medium",
+              "seri": 27.51,
+              "incident_count": 18,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.3244,
+              "forecast_band": "Medium",
+              "seri": 21.7,
+              "incident_count": 17,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.2534,
+              "forecast_band": "Medium",
+              "seri": 16.45,
+              "incident_count": 10,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Magadi Road",
+              "forecast_score": 0.2534,
+              "forecast_band": "Medium",
+              "seri": 16.19,
+              "incident_count": 9,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.6583,
+          "risk_level": "High"
+        },
+        "afternoon": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.4356,
+              "forecast_band": "Medium",
+              "seri": 28.01,
+              "incident_count": 20,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.1926,
+              "forecast_band": "Low",
+              "seri": 11.95,
+              "incident_count": 6,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.1522,
+              "forecast_band": "Low",
+              "seri": 9.96,
+              "incident_count": 5,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Old Madras Road",
+              "forecast_score": 0.1417,
+              "forecast_band": "Low",
+              "seri": 8.59,
+              "incident_count": 6,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.1317,
+              "forecast_band": "Low",
+              "seri": 8.39,
+              "incident_count": 5,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.4356,
+          "risk_level": "Medium"
+        },
+        "evening": {
+          "top_corridors": [
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.1013,
+              "forecast_band": "Low",
+              "seri": 5.98,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.0913,
+              "forecast_band": "Low",
+              "seri": 6.57,
+              "incident_count": 5,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0913,
+              "forecast_band": "Low",
+              "seri": 6.22,
+              "incident_count": 3,
+              "top_cause": "accident",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "ORR North 1",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "IRR(Thanisandra road)",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.01,
+              "incident_count": 1,
+              "top_cause": "tree_fall",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.1013,
+          "risk_level": "Low"
+        },
+        "night": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.0913,
+              "forecast_band": "Low",
+              "seri": 5.98,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 3.96,
+              "incident_count": 2,
+              "top_cause": "others",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 3.99,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Hosur Road",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Old Madras Road",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.11,
+              "incident_count": 1,
+              "top_cause": "accident",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.0913,
+          "risk_level": "Low"
+        },
+        "midnight": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.8991,
+              "forecast_band": "Critical",
+              "seri": 80.38,
+              "incident_count": 169,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.8667
+            },
+            {
+              "corridor": "ORR East 2",
+              "forecast_score": 0.6787,
+              "forecast_band": "High",
+              "seri": 42.58,
+              "incident_count": 29,
+              "top_cause": "construction",
+              "recent_trend_score": 0.2333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.557,
+              "forecast_band": "High",
+              "seri": 35.89,
+              "incident_count": 32,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.4856,
+              "forecast_band": "Medium",
+              "seri": 29.99,
+              "incident_count": 29,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.3
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.4461,
+              "forecast_band": "Medium",
+              "seri": 32.07,
+              "incident_count": 30,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            }
+          ],
+          "max_score": 0.8991,
+          "risk_level": "Critical"
+        }
+      },
+      "Tuesday": {
+        "early_morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.7687,
+              "forecast_band": "Critical",
+              "seri": 61.26,
+              "incident_count": 99,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.5333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.4661,
+              "forecast_band": "Medium",
+              "seri": 29.9,
+              "incident_count": 22,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4052,
+              "forecast_band": "Medium",
+              "seri": 25.94,
+              "incident_count": 20,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.3952,
+              "forecast_band": "Medium",
+              "seri": 23.91,
+              "incident_count": 12,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "Magadi Road",
+              "forecast_score": 0.2939,
+              "forecast_band": "Medium",
+              "seri": 18.72,
+              "incident_count": 12,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            }
+          ],
+          "max_score": 0.7687,
+          "risk_level": "Critical"
+        },
+        "morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.8591,
+              "forecast_band": "Critical",
+              "seri": 74.42,
+              "incident_count": 142,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.7333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.557,
+              "forecast_band": "High",
+              "seri": 37.27,
+              "incident_count": 36,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.5565,
+              "forecast_band": "High",
+              "seri": 34.79,
+              "incident_count": 33,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.3333
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.3648,
+              "forecast_band": "Medium",
+              "seri": 24.25,
+              "incident_count": 18,
+              "top_cause": "congestion",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "Bannerghata Road",
+              "forecast_score": 0.3648,
+              "forecast_band": "Medium",
+              "seri": 23.0,
+              "incident_count": 15,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            }
+          ],
+          "max_score": 0.8591,
+          "risk_level": "Critical"
+        },
+        "afternoon": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.6078,
+              "forecast_band": "High",
+              "seri": 41.48,
+              "incident_count": 38,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.223,
+              "forecast_band": "Low",
+              "seri": 14.81,
+              "incident_count": 10,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.2026,
+              "forecast_band": "Low",
+              "seri": 12.58,
+              "incident_count": 8,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.1926,
+              "forecast_band": "Low",
+              "seri": 12.46,
+              "incident_count": 8,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Magadi Road",
+              "forecast_score": 0.0913,
+              "forecast_band": "Low",
+              "seri": 5.98,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.6078,
+          "risk_level": "High"
+        },
+        "evening": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 3.97,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bannerghata Road",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "ORR East 1",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.02,
+              "incident_count": 1,
+              "top_cause": "construction",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "ORR North 1",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Hosur Road",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.0609,
+          "risk_level": "Low"
+        },
+        "night": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.2939,
+              "forecast_band": "Medium",
+              "seri": 18.71,
+              "incident_count": 11,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "ORR East 1",
+              "forecast_score": 0.1622,
+              "forecast_band": "Low",
+              "seri": 9.96,
+              "incident_count": 5,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 3.99,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 4.11,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 4.27,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.2939,
+          "risk_level": "Medium"
+        },
+        "midnight": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.9391,
+              "forecast_band": "Critical",
+              "seri": 96.52,
+              "incident_count": 206,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 1.0
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.6478,
+              "forecast_band": "High",
+              "seri": 42.98,
+              "incident_count": 46,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.3333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.5978,
+              "forecast_band": "High",
+              "seri": 40.68,
+              "incident_count": 36,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            },
+            {
+              "corridor": "ORR East 2",
+              "forecast_score": 0.5574,
+              "forecast_band": "High",
+              "seri": 35.72,
+              "incident_count": 22,
+              "top_cause": "construction",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.5366,
+              "forecast_band": "High",
+              "seri": 32.84,
+              "incident_count": 26,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2667
+            }
+          ],
+          "max_score": 0.9391,
+          "risk_level": "Critical"
+        }
+      },
+      "Wednesday": {
+        "early_morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.7591,
+              "forecast_band": "Critical",
+              "seri": 51.55,
+              "incident_count": 58,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.4
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4256,
+              "forecast_band": "Medium",
+              "seri": 29.45,
+              "incident_count": 26,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.2839,
+              "forecast_band": "Medium",
+              "seri": 18.8,
+              "incident_count": 11,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.2839,
+              "forecast_band": "Medium",
+              "seri": 19.2,
+              "incident_count": 14,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "ORR East 1",
+              "forecast_score": 0.2534,
+              "forecast_band": "Medium",
+              "seri": 15.94,
+              "incident_count": 8,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.7591,
+          "risk_level": "Critical"
+        },
+        "morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.7491,
+              "forecast_band": "Critical",
+              "seri": 68.43,
+              "incident_count": 122,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.3667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4861,
+              "forecast_band": "Medium",
+              "seri": 33.51,
+              "incident_count": 36,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.4761,
+              "forecast_band": "Medium",
+              "seri": 31.06,
+              "incident_count": 26,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            },
+            {
+              "corridor": "Magadi Road",
+              "forecast_score": 0.4356,
+              "forecast_band": "Medium",
+              "seri": 26.64,
+              "incident_count": 16,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.4256,
+              "forecast_band": "Medium",
+              "seri": 26.66,
+              "incident_count": 14,
+              "top_cause": "congestion",
+              "recent_trend_score": 0.1
+            }
+          ],
+          "max_score": 0.7491,
+          "risk_level": "Critical"
+        },
+        "afternoon": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.5878,
+              "forecast_band": "High",
+              "seri": 44.17,
+              "incident_count": 49,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Hosur Road",
+              "forecast_score": 0.2834,
+              "forecast_band": "Medium",
+              "seri": 17.21,
+              "incident_count": 12,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.2635,
+              "forecast_band": "Medium",
+              "seri": 15.96,
+              "incident_count": 8,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.1622,
+              "forecast_band": "Low",
+              "seri": 11.02,
+              "incident_count": 9,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.1522,
+              "forecast_band": "Low",
+              "seri": 10.56,
+              "incident_count": 7,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.5878,
+          "risk_level": "High"
+        },
+        "evening": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.3548,
+              "forecast_band": "Medium",
+              "seri": 22.44,
+              "incident_count": 11,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.1013,
+              "forecast_band": "Low",
+              "seri": 6.23,
+              "incident_count": 4,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "ORR North 1",
+              "forecast_score": 0.0505,
+              "forecast_band": "Low",
+              "seri": 2.31,
+              "incident_count": 2,
+              "top_cause": "construction",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Varthur Road",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.02,
+              "incident_count": 1,
+              "top_cause": "construction",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "road_conditions",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.3548,
+          "risk_level": "Medium"
+        },
+        "night": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.1722,
+              "forecast_band": "Low",
+              "seri": 10.45,
+              "incident_count": 6,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.0709,
+              "forecast_band": "Low",
+              "seri": 3.97,
+              "incident_count": 2,
+              "top_cause": "others",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "ORR East 2",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Hosur Road",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.5,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.1722,
+          "risk_level": "Low"
+        },
+        "midnight": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.9291,
+              "forecast_band": "Critical",
+              "seri": 80.97,
+              "incident_count": 171,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.9667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.6383,
+              "forecast_band": "High",
+              "seri": 43.94,
+              "incident_count": 43,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2
+            },
+            {
+              "corridor": "ORR East 2",
+              "forecast_score": 0.5474,
+              "forecast_band": "High",
+              "seri": 35.42,
+              "incident_count": 21,
+              "top_cause": "construction",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "ORR North 1",
+              "forecast_score": 0.4765,
+              "forecast_band": "Medium",
+              "seri": 31.46,
+              "incident_count": 20,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.4761,
+              "forecast_band": "Medium",
+              "seri": 30.39,
+              "incident_count": 23,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            }
+          ],
+          "max_score": 0.9291,
+          "risk_level": "Critical"
+        }
+      },
+      "Thursday": {
+        "early_morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.7783,
+              "forecast_band": "Critical",
+              "seri": 51.07,
+              "incident_count": 69,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.6667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4761,
+              "forecast_band": "Medium",
+              "seri": 29.72,
+              "incident_count": 21,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.4356,
+              "forecast_band": "Medium",
+              "seri": 27.19,
+              "incident_count": 18,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.3139,
+              "forecast_band": "Medium",
+              "seri": 19.7,
+              "incident_count": 16,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.3039,
+              "forecast_band": "Medium",
+              "seri": 19.61,
+              "incident_count": 14,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            }
+          ],
+          "max_score": 0.7783,
+          "risk_level": "Critical"
+        },
+        "morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.7591,
+              "forecast_band": "Critical",
+              "seri": 90.62,
+              "incident_count": 205,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.4
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.5574,
+              "forecast_band": "High",
+              "seri": 40.81,
+              "incident_count": 43,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.4556,
+              "forecast_band": "Medium",
+              "seri": 28.32,
+              "incident_count": 20,
+              "top_cause": "congestion",
+              "recent_trend_score": 0.2
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.4256,
+              "forecast_band": "Medium",
+              "seri": 30.56,
+              "incident_count": 31,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.3848,
+              "forecast_band": "Medium",
+              "seri": 24.47,
+              "incident_count": 21,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            }
+          ],
+          "max_score": 0.7591,
+          "risk_level": "Critical"
+        },
+        "afternoon": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.537,
+              "forecast_band": "High",
+              "seri": 40.36,
+              "incident_count": 47,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.2839,
+              "forecast_band": "Medium",
+              "seri": 20.25,
+              "incident_count": 18,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.223,
+              "forecast_band": "Low",
+              "seri": 15.82,
+              "incident_count": 13,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.223,
+              "forecast_band": "Low",
+              "seri": 14.36,
+              "incident_count": 8,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.1522,
+              "forecast_band": "Low",
+              "seri": 10.46,
+              "incident_count": 7,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.537,
+          "risk_level": "High"
+        },
+        "evening": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.2226,
+              "forecast_band": "Low",
+              "seri": 14.83,
+              "incident_count": 14,
+              "top_cause": "accident",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.1113,
+              "forecast_band": "Low",
+              "seri": 6.23,
+              "incident_count": 4,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0809,
+              "forecast_band": "Low",
+              "seri": 4.53,
+              "incident_count": 4,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "ORR West 1",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.02,
+              "incident_count": 1,
+              "top_cause": "construction",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.2226,
+          "risk_level": "Low"
+        },
+        "night": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.1217,
+              "forecast_band": "Low",
+              "seri": 8.49,
+              "incident_count": 6,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Hosur Road",
+              "forecast_score": 0.0704,
+              "forecast_band": "Low",
+              "seri": 2.98,
+              "incident_count": 4,
+              "top_cause": "accident",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 3.97,
+              "incident_count": 2,
+              "top_cause": "others",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.1217,
+          "risk_level": "Low"
+        },
+        "midnight": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.9696,
+              "forecast_band": "Critical",
+              "seri": 89.08,
+              "incident_count": 195,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 1.0
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.6178,
+              "forecast_band": "High",
+              "seri": 40.0,
+              "incident_count": 34,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2333
+            },
+            {
+              "corridor": "ORR East 2",
+              "forecast_score": 0.5574,
+              "forecast_band": "High",
+              "seri": 34.69,
+              "incident_count": 18,
+              "top_cause": "construction",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.537,
+              "forecast_band": "High",
+              "seri": 36.65,
+              "incident_count": 34,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4961,
+              "forecast_band": "Medium",
+              "seri": 33.42,
+              "incident_count": 36,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2333
+            }
+          ],
+          "max_score": 0.9696,
+          "risk_level": "Critical"
+        }
+      },
+      "Friday": {
+        "early_morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.7391,
+              "forecast_band": "Critical",
+              "seri": 59.84,
+              "incident_count": 87,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.3333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4461,
+              "forecast_band": "Medium",
+              "seri": 29.76,
+              "incident_count": 21,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.3548,
+              "forecast_band": "Medium",
+              "seri": 23.7,
+              "incident_count": 18,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.3244,
+              "forecast_band": "Medium",
+              "seri": 21.41,
+              "incident_count": 16,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "ORR North 1",
+              "forecast_score": 0.2635,
+              "forecast_band": "Medium",
+              "seri": 17.51,
+              "incident_count": 14,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            }
+          ],
+          "max_score": 0.7391,
+          "risk_level": "Critical"
+        },
+        "morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.8587,
+              "forecast_band": "Critical",
+              "seri": 66.85,
+              "incident_count": 124,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.8333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.5265,
+              "forecast_band": "High",
+              "seri": 35.09,
+              "incident_count": 34,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.4656,
+              "forecast_band": "Medium",
+              "seri": 28.21,
+              "incident_count": 22,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.4256,
+              "forecast_band": "Medium",
+              "seri": 27.17,
+              "incident_count": 18,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.3039,
+              "forecast_band": "Medium",
+              "seri": 18.89,
+              "incident_count": 11,
+              "top_cause": "congestion",
+              "recent_trend_score": 0.1
+            }
+          ],
+          "max_score": 0.8587,
+          "risk_level": "Critical"
+        },
+        "afternoon": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.5366,
+              "forecast_band": "High",
+              "seri": 42.0,
+              "incident_count": 61,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.3444,
+              "forecast_band": "Medium",
+              "seri": 21.11,
+              "incident_count": 14,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.3139,
+              "forecast_band": "Medium",
+              "seri": 19.82,
+              "incident_count": 16,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Hosur Road",
+              "forecast_score": 0.2026,
+              "forecast_band": "Low",
+              "seri": 15.6,
+              "incident_count": 19,
+              "top_cause": "water_logging",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.1722,
+              "forecast_band": "Low",
+              "seri": 10.22,
+              "incident_count": 6,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            }
+          ],
+          "max_score": 0.5366,
+          "risk_level": "High"
+        },
+        "evening": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.2122,
+              "forecast_band": "Low",
+              "seri": 12.76,
+              "incident_count": 15,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.0809,
+              "forecast_band": "Low",
+              "seri": 4.02,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Old Airport Road",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.37,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.11,
+              "incident_count": 1,
+              "top_cause": "accident",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bannerghata Road",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.02,
+              "incident_count": 1,
+              "top_cause": "construction",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.2122,
+          "risk_level": "Low"
+        },
+        "night": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.1013,
+              "forecast_band": "Low",
+              "seri": 6.23,
+              "incident_count": 4,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.1013,
+              "forecast_band": "Low",
+              "seri": 6.22,
+              "incident_count": 3,
+              "top_cause": "accident",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0709,
+              "forecast_band": "Low",
+              "seri": 3.99,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 3.99,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 4.24,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.1013,
+          "risk_level": "Low"
+        },
+        "midnight": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.8696,
+              "forecast_band": "Critical",
+              "seri": 80.7,
+              "incident_count": 163,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.6667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.6078,
+              "forecast_band": "High",
+              "seri": 41.42,
+              "incident_count": 39,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2
+            },
+            {
+              "corridor": "ORR East 2",
+              "forecast_score": 0.5878,
+              "forecast_band": "High",
+              "seri": 38.94,
+              "incident_count": 28,
+              "top_cause": "construction",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.5874,
+              "forecast_band": "High",
+              "seri": 38.77,
+              "incident_count": 36,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2333
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.3648,
+              "forecast_band": "Medium",
+              "seri": 25.05,
+              "incident_count": 23,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            }
+          ],
+          "max_score": 0.8696,
+          "risk_level": "Critical"
+        }
+      },
+      "Saturday": {
+        "early_morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.8996,
+              "forecast_band": "Critical",
+              "seri": 62.38,
+              "incident_count": 94,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.7667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.5474,
+              "forecast_band": "High",
+              "seri": 36.41,
+              "incident_count": 26,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.3952,
+              "forecast_band": "Medium",
+              "seri": 24.91,
+              "incident_count": 16,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.2939,
+              "forecast_band": "Medium",
+              "seri": 19.69,
+              "incident_count": 16,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.2126,
+              "forecast_band": "Low",
+              "seri": 12.93,
+              "incident_count": 9,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            }
+          ],
+          "max_score": 0.8996,
+          "risk_level": "Critical"
+        },
+        "morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.9396,
+              "forecast_band": "Critical",
+              "seri": 82.69,
+              "incident_count": 164,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.9
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4661,
+              "forecast_band": "Medium",
+              "seri": 33.64,
+              "incident_count": 35,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Magadi Road",
+              "forecast_score": 0.4256,
+              "forecast_band": "Medium",
+              "seri": 27.42,
+              "incident_count": 19,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.4156,
+              "forecast_band": "Medium",
+              "seri": 27.41,
+              "incident_count": 17,
+              "top_cause": "congestion",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "ORR West 1",
+              "forecast_score": 0.3848,
+              "forecast_band": "Medium",
+              "seri": 23.05,
+              "incident_count": 15,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            }
+          ],
+          "max_score": 0.9396,
+          "risk_level": "Critical"
+        },
+        "afternoon": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.5574,
+              "forecast_band": "High",
+              "seri": 42.95,
+              "incident_count": 50,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.2735,
+              "forecast_band": "Medium",
+              "seri": 16.43,
+              "incident_count": 9,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.223,
+              "forecast_band": "Low",
+              "seri": 14.31,
+              "incident_count": 8,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.1926,
+              "forecast_band": "Low",
+              "seri": 11.96,
+              "incident_count": 6,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.1926,
+              "forecast_band": "Low",
+              "seri": 11.99,
+              "incident_count": 6,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.5574,
+          "risk_level": "High"
+        },
+        "evening": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.1622,
+              "forecast_band": "Low",
+              "seri": 10.58,
+              "incident_count": 7,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0809,
+              "forecast_band": "Low",
+              "seri": 4.27,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.0809,
+              "forecast_band": "Low",
+              "seri": 4.36,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Varthur Road",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 4.02,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "ORR North 1",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 4.86,
+              "incident_count": 5,
+              "top_cause": "construction",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.1622,
+          "risk_level": "Low"
+        },
+        "night": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.213,
+              "forecast_band": "Low",
+              "seri": 15.16,
+              "incident_count": 11,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0709,
+              "forecast_band": "Low",
+              "seri": 4.01,
+              "incident_count": 2,
+              "top_cause": "tree_fall",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.0505,
+              "forecast_band": "Low",
+              "seri": 2.25,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "ORR North 1",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.213,
+          "risk_level": "Low"
+        },
+        "midnight": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.9696,
+              "forecast_band": "Critical",
+              "seri": 76.76,
+              "incident_count": 147,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 1.0
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.5974,
+              "forecast_band": "High",
+              "seri": 39.71,
+              "incident_count": 40,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2667
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.5165,
+              "forecast_band": "High",
+              "seri": 31.91,
+              "incident_count": 23,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.5065,
+              "forecast_band": "High",
+              "seri": 33.99,
+              "incident_count": 30,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.4461,
+              "forecast_band": "Medium",
+              "seri": 31.78,
+              "incident_count": 28,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            }
+          ],
+          "max_score": 0.9696,
+          "risk_level": "Critical"
+        }
+      },
+      "Sunday": {
+        "early_morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.7796,
+              "forecast_band": "Critical",
+              "seri": 60.11,
+              "incident_count": 84,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.3667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.5974,
+              "forecast_band": "High",
+              "seri": 37.41,
+              "incident_count": 30,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.4156,
+              "forecast_band": "Medium",
+              "seri": 29.19,
+              "incident_count": 26,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.3544,
+              "forecast_band": "Medium",
+              "seri": 21.59,
+              "incident_count": 16,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1667
+            },
+            {
+              "corridor": "ORR North 2",
+              "forecast_score": 0.2635,
+              "forecast_band": "Medium",
+              "seri": 16.52,
+              "incident_count": 10,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            }
+          ],
+          "max_score": 0.7796,
+          "risk_level": "Critical"
+        },
+        "morning": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.8196,
+              "forecast_band": "Critical",
+              "seri": 65.89,
+              "incident_count": 107,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.5
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.527,
+              "forecast_band": "High",
+              "seri": 33.76,
+              "incident_count": 23,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.5165,
+              "forecast_band": "High",
+              "seri": 33.4,
+              "incident_count": 28,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.2
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.4965,
+              "forecast_band": "Medium",
+              "seri": 33.69,
+              "incident_count": 29,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.4361,
+              "forecast_band": "Medium",
+              "seri": 30.04,
+              "incident_count": 22,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.8196,
+          "risk_level": "Critical"
+        },
+        "afternoon": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.6074,
+              "forecast_band": "High",
+              "seri": 40.84,
+              "incident_count": 43,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.3
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.3244,
+              "forecast_band": "Medium",
+              "seri": 20.24,
+              "incident_count": 11,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.233,
+              "forecast_band": "Low",
+              "seri": 15.43,
+              "incident_count": 12,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "West of Chord Road",
+              "forecast_score": 0.1722,
+              "forecast_band": "Low",
+              "seri": 10.08,
+              "incident_count": 5,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.1622,
+              "forecast_band": "Low",
+              "seri": 11.51,
+              "incident_count": 11,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.6074,
+          "risk_level": "High"
+        },
+        "evening": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.243,
+              "forecast_band": "Low",
+              "seri": 14.47,
+              "incident_count": 9,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.0709,
+              "forecast_band": "Low",
+              "seri": 3.96,
+              "incident_count": 2,
+              "top_cause": "others",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 3.99,
+              "incident_count": 2,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "ORR East 1",
+              "forecast_score": 0.0609,
+              "forecast_band": "Low",
+              "seri": 4.33,
+              "incident_count": 3,
+              "top_cause": "construction",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bellary Road 2",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.11,
+              "incident_count": 1,
+              "top_cause": "accident",
+              "recent_trend_score": 0.0333
+            }
+          ],
+          "max_score": 0.243,
+          "risk_level": "Low"
+        },
+        "night": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.0809,
+              "forecast_band": "Low",
+              "seri": 4.24,
+              "incident_count": 3,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "ORR East 1",
+              "forecast_score": 0.0404,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.0,
+              "incident_count": 1,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.0304,
+              "forecast_band": "Low",
+              "seri": 2.11,
+              "incident_count": 1,
+              "top_cause": "accident",
+              "recent_trend_score": 0.0
+            }
+          ],
+          "max_score": 0.0809,
+          "risk_level": "Low"
+        },
+        "midnight": {
+          "top_corridors": [
+            {
+              "corridor": "Non-corridor",
+              "forecast_score": 0.8096,
+              "forecast_band": "Critical",
+              "seri": 62.0,
+              "incident_count": 89,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.4667
+            },
+            {
+              "corridor": "Mysore Road",
+              "forecast_score": 0.527,
+              "forecast_band": "High",
+              "seri": 36.4,
+              "incident_count": 34,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.1333
+            },
+            {
+              "corridor": "Bellary Road 1",
+              "forecast_score": 0.4461,
+              "forecast_band": "Medium",
+              "seri": 30.29,
+              "incident_count": 23,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            },
+            {
+              "corridor": "Tumkur Road",
+              "forecast_score": 0.4056,
+              "forecast_band": "Medium",
+              "seri": 26.76,
+              "incident_count": 16,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0333
+            },
+            {
+              "corridor": "ORR North 1",
+              "forecast_score": 0.2635,
+              "forecast_band": "Medium",
+              "seri": 16.96,
+              "incident_count": 12,
+              "top_cause": "vehicle_breakdown",
+              "recent_trend_score": 0.0667
+            }
+          ],
+          "max_score": 0.8096,
+          "risk_level": "Critical"
+        }
+      }
+    },
+    "total": 170,
+    "data": [
+      {
+        "shadow_event_id": "SE0025",
+        "corridor": "ORR East 2",
+        "day_name": "Monday",
+        "time_bucket": "midnight",
+        "recurrence_score": 0.8696,
+        "seri": 42.58,
+        "seri_band": "Medium",
+        "incident_count": 29,
+        "top_cause": "construction",
+        "lat_centroid": 12.975640444482758,
+        "lon_centroid": 77.69624312620691,
+        "recent_trend_score": 0.2333,
+        "forecast_score": 0.6787,
+        "forecast_band": "High",
+        "actual_score": 0.2143,
+        "forecast_error": 0.4644
+      }
+    ]
+  },
+  "learning_history": {
+    "history": [],
+    "accuracy": {
+      "total_feedback": 0,
+      "breakdown": {},
+      "held_out_mae": 0.2696,
+      "held_out_slots": 200
+    },
+    "total": 0
+  },
+  "methodology": {
+    "dataset": {
+      "name": "ASTRAM Traffic Events Dataset",
+      "rows": 8139,
+      "columns_raw": 46,
+      "columns_used": 20,
+      "span": "Nov 2023 \u2013 Apr 2024",
+      "weeks": 23,
+      "city": "Bengaluru, India",
+      "bounding_box": {
+        "lat": [
+          12.5,
+          13.2
+        ],
+        "lon": [
+          77.2,
+          77.8
+        ]
+      }
+    },
+    "pipeline": [
+      "Raw CSV (8,173 rows) \u2192 Data Cleaning \u2192 Feature Engineering \u2192 Shadow Event Discovery \u2192 SERI Computation \u2192 Forecast Engine \u2192 Similarity Index"
+    ],
+    "timestamp_note": "Timestamps are UTC. IST = UTC + 5:30. Peak incidents at 2-3 AM IST reflect freight vehicles (restricted from Bengaluru daytime entry).",
+    "shadow_event": {
+      "definition": "A (corridor, day_of_week, time_bucket_ist) combination that appears in at least 1 of 23 weeks.",
+      "total": 699,
+      "formula": "Aggregated by groupby(corridor, day_name, time_bucket_ist)"
+    },
+    "seri": {
+      "name": "Shadow Event Risk Index",
+      "formula": "SERI = (0.4 \u00d7 recurrence_score + 0.4 \u00d7 frequency_score + 0.2 \u00d7 severity_score) \u00d7 100",
+      "components": {
+        "recurrence_score": "distinct_weeks_present / 23  \u2208 [0,1]",
+        "frequency_score": "incident_count / max_incident_count  \u2208 [0,1]",
+        "severity_score": "\u03a3 cause_severity_weight / max_\u03a3  \u2208 [0,1]"
+      },
+      "cause_severity_weights": {
+        "accident": 3.0,
+        "congestion": 2.0,
+        "water_logging": 1.5,
+        "construction": 1.5,
+        "tree_fall": 1.2,
+        "vehicle_breakdown": 1.0
+      },
+      "scale": "0\u2013100",
+      "bands": {
+        "Low": "0\u201330",
+        "Medium": "31\u201360",
+        "High": "61\u201380",
+        "Critical": "81\u2013100"
+      }
+    },
+    "forecast": {
+      "formula": "forecast_score = 0.7 \u00d7 recurrence_score + 0.3 \u00d7 recent_trend_score",
+      "recent_trend": "incident count in last 4 weeks / max across all slots",
+      "holdout": "Last 2 weeks of dataset used as pseudo-actuals for MAE validation",
+      "label": "Historical Pattern-Based Forecast \u2014 NOT real-time prediction"
+    },
+    "similarity": {
+      "algorithm": "KNN BallTree, Euclidean distance, k=10",
+      "features": [
+        "latitude",
+        "longitude",
+        "hour_ist",
+        "day_of_week",
+        "event_cause_id",
+        "corridor_id"
+      ],
+      "normalization": "StandardScaler (zero mean, unit variance)",
+      "similarity_score": "1 / (1 + euclidean_distance)"
+    },
+    "hotspots": {
+      "method_a": "Corridor rank by \u03a3 risk_weight, normalized to [0,1]",
+      "method_b": "DBSCAN: eps=0.008\u00b0 (~889m at Bengaluru lat), min_samples=10",
+      "clusters": 14
+    },
+    "assumptions": [
+      "Patterns from Nov 2023\u2013Apr 2024 are representative of typical Bengaluru traffic.",
+      "risk_weight multipliers (1.5\u00d7 High, 2\u00d7 accident) are domain heuristics, not empirically calibrated.",
+      "..."
+    ],
+    "limitations": [
+      "Cannot account for one-off events, weather, or policy changes.",
+      "end_datetime is 94% null \u2014 no incident duration analysis possible.",
+      "..."
+    ]
+  },
+  "whatif": {
+    "status": "success",
+    "impact_multiplier": 1.8
+  },
+  "agent": {
+    "advisory": "Heavy congestion expected due to structural damage."
+  }
+}
