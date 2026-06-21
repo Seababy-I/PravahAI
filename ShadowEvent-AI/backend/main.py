@@ -25,15 +25,14 @@ try:
 except ImportError:
     pass
 
-from utils.ist_utils import utc_str_to_ist, now_ist
-
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "..", "data")
 PROC_DIR = os.path.join(DATA_DIR, "processed")
 DB_PATH = os.path.join(DATA_DIR, "shadow_events.db")
 
 sys.path.insert(0, BASE_DIR)
+
+from utils.ist_utils import utc_str_to_ist, now_ist
 
 # IST timestamp utility
 
@@ -82,12 +81,7 @@ def _load_data():
     if os.path.exists(fc_path):
         with open(fc_path) as f:
             _forecast = json.load(f)
-        print(
-            f"[app] Loaded forecast: {
-                len(
-                    _forecast.get(
-                        'forecast',
-                        []))} slots")
+        print(f"[app] Loaded forecast: {len(_forecast.get('forecast', []))}")
 
     for pkl, attr in [
         (os.path.join(PROC_DIR, "knn_index.pkl"), "_knn"),
@@ -371,7 +365,8 @@ def get_similar_events(incident_id: str, top_k: int = 10):
         _knn_ids,
         top_k)
     if not results:
-        raise HTTPException(404, f"Incident '{incident_id}' not found.")
+        raise HTTPException(404, 
+        f"Incident '{incident_id}' not found.")
     query_row = _df_feat[_df_feat["id"] == incident_id]
     query_info = {}
     if len(query_row):
@@ -554,8 +549,8 @@ def submit_feedback(body: FeedbackInput):
     )
     if result is None:
         raise HTTPException(
-            404, f"forecast_log_id {
-                body.forecast_log_id} not found")
+            404, 
+            f"forecast_log_id {body.forecast_log_id} not found")
     return {"success": True, **result}
 
 
