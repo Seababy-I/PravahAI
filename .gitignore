@@ -1,4 +1,4 @@
-# Environment files
+# Environment
 .env
 .env.*
 ShadowEvent-AI/backend/.env
@@ -6,6 +6,15 @@ ShadowEvent-AI/backend/.env
 # Python
 __pycache__/
 *.pyc
+*.pyo
 
 # Database
 *.db
+
+# Node
+node_modules/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
