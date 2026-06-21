@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import API_BASE from "../api/client";
+import { Database, Settings, Eye, BarChart2, Calendar, Search, Flame, Brain, AlertTriangle } from "lucide-react";
 
 const sections = [
-  { id:"dataset",    icon:"ðŸ—„ï¸",  label:"Dataset" },
-  { id:"pipeline",   icon:"âš™ï¸",  label:"Pipeline" },
-  { id:"shadow",     icon:"ðŸ‘ï¸",  label:"Shadow Events" },
+  { id:"dataset",    icon:<Database size={16} />,   label:"Dataset" },
+  { id:"pipeline",   icon:<Settings size={16} />,   label:"Pipeline" },
+  { id:"shadow",     icon:<Eye size={16} />,         label:"Shadow Events" },
   { id:"seri",       icon:<BarChart2 size={16} />,  label:"SERI" },
   { id:"forecast",   icon:<Calendar size={16} />,  label:"Forecast" },
-  { id:"similarity", icon:"ðŸ”",  label:"Similarity" },
-  { id:"hotspots",   icon:<Flame size={16} />,  label:"Hotspots" },
-  { id:"learning",   icon:<Brain size={16} />,  label:"Learning" },
-  { id:"limits",     icon:"âš ï¸",  label:"Limitations" },
+  { id:"similarity", icon:<Search size={16} />,     label:"Similarity" },
+  { id:"hotspots",   icon:<Flame size={16} />,     label:"Hotspots" },
+  { id:"learning",   icon:<Brain size={16} />,     label:"Learning" },
+  { id:"limits",     icon:<AlertTriangle size={16} />, label:"Limitations" },
 ];
 
 export default function Methodology() {
@@ -82,7 +83,7 @@ export default function Methodology() {
         <div style={{flex:1}}>
           {/* Dataset */}
           <div id="dataset">{card(<>
-            <div className="section-title" style={{marginBottom:16}}>ðŸ—„ï¸ Dataset</div>
+            <div className="section-title" style={{marginBottom:16}} data-id="dataset"><Database size={20} style={{display:"inline",verticalAlign:"middle",marginRight:8}} /> Dataset</div>
             <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:12,marginBottom:16}}>
               {[
                 {label:"Source",   value:"ASTRAM Traffic Events"},
@@ -103,13 +104,13 @@ export default function Methodology() {
               {meta?.timestamp_note || "Timestamps are UTC. IST = UTC + 5:30. Peak at 2-3 AM IST reflects Bengaluru freight vehicle operation hours (trucks restricted from city daytime entry by BBMP rules)."}
             </div>
             <div style={{marginTop:12,fontSize:13,color:"var(--text-muted)"}}>
-              Bounding box: Lat [{ds.bounding_box?.lat?.join(", ")}] Â· Lon [{ds.bounding_box?.lon?.join(", ")}]
+              Bounding box: Lat [{ds.bounding_box?.lat?.join(", ")}] &middot; Lon [{ds.bounding_box?.lon?.join(", ")}]
             </div>
           </>)}</div>
 
           {/* Pipeline */}
           <div id="pipeline">{card(<>
-            <div className="section-title" style={{marginBottom:16}}>âš™ï¸ Data Pipeline</div>
+            <div className="section-title" style={{marginBottom:16}}><Settings size={20} style={{display:"inline",verticalAlign:"middle",marginRight:8}} /> Data Pipeline</div>
             <div style={{display:"flex",flexWrap:"wrap",gap:0,alignItems:"center",marginBottom:16}}>
               {["Raw CSV\n8,173 rows","→","Cleaning\n34 dropped","→","Feature Eng.\n44 columns","→","Shadow Events\n666 slots","→","SERI Scores\n0–100","→","Forecast\n7-day view","→","SQLite DB\n+ KNN Index"].map((s,i)=>(
                 <div key={i} style={{
@@ -131,7 +132,7 @@ export default function Methodology() {
 
           {/* Shadow Events */}
           <div id="shadow">{card(<>
-            <div className="section-title" style={{marginBottom:16}}>ðŸ‘ï¸ Shadow Events</div>
+            <div className="section-title" style={{marginBottom:16}}><Eye size={20} style={{display:"inline",verticalAlign:"middle",marginRight:8}} /> Shadow Events</div>
             <p style={{fontSize:13,color:"var(--text-secondary)",lineHeight:1.7,marginBottom:12}}>
               A <b style={{color:"var(--accent-cyan)"}}>Shadow Event</b> is any
               <code style={{margin:"0 6px",padding:"2px 6px",background:"rgba(6,182,212,0.1)",borderRadius:4}}>(corridor, day_of_week, time_bucket_IST)</code>
@@ -207,7 +208,7 @@ Validation MAE: ~13.75 percentage points on held-out weeks`)}
 
           {/* Similarity */}
           <div id="similarity">{card(<>
-            <div className="section-title" style={{marginBottom:16}}>ðŸ” KNN Similarity Engine</div>
+            <div className="section-title" style={{marginBottom:16}}><Search size={20} style={{display:"inline",verticalAlign:"middle",marginRight:8}} /> KNN Similarity Engine</div>
             {formula(`Algorithm:   KNN BallTree with Euclidean distance
 k:           10 nearest neighbours
 Features:    [latitude, longitude, hour_ist, day_of_week, event_cause_id, corridor_id]
@@ -230,7 +231,7 @@ similarity_score = 1 / (1 + euclidean_distance)    ∈ (0, 1]`)}
   risk_weight   = 1.5× if High priority, 2.0× if accident
 
 Method B — DBSCAN Spatial Clustering:
-  eps         = 0.008Â° (~890m at Bengaluru latitude)
+  eps         = 0.008° (~890m at Bengaluru latitude)
   min_samples = 10 incidents
   clusters    = 14 found   (270 noise points)`)}
             <div style={{fontSize:12,color:"var(--text-muted)"}}>
@@ -259,7 +260,7 @@ No model weights are updated. This is observational feedback logging.`)}
 
           {/* Limitations */}
           <div id="limits">{card(<>
-            <div className="section-title" style={{marginBottom:16}}>âš ï¸ Assumptions & Limitations</div>
+            <div className="section-title" style={{marginBottom:16}}><AlertTriangle size={20} style={{display:"inline",verticalAlign:"middle",marginRight:8}} /> Assumptions &amp; Limitations</div>
             <div style={{marginBottom:16}}>
               <div style={{fontWeight:700,color:"var(--text-primary)",marginBottom:10}}>Documented Assumptions</div>
               {(meta?.assumptions || [

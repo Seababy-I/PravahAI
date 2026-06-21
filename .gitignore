@@ -1,19 +1,20 @@
 # Environment
 .env
 .env.*
-ShadowEvent-AI/backend/.env
+!.env.example
 
 # Python
 __pycache__/
 *.pyc
 *.pyo
 
-# Database
-*.db
-
 # Node
 node_modules/
 dist/
+.dist/
+
+# Database
+*.db
 
 # OS
 .DS_Store

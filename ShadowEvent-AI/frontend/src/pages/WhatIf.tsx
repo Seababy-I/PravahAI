@@ -1,9 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 import API_BASE from "../api/client";
-import { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
-import MapMyIndiaStaticOverlay from "../components/MapMyIndiaStaticOverlay";
+
 import OperationalPanel from "../components/OperationalPanel";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -56,11 +55,7 @@ export default function WhatIf() {
   const [result, setResult] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError]  = useState("");
-  const [mmiConfig, setMmiConfig] = useState<any>(null);
 
-  useEffect(() => {
-    axios.get(`${API_BASE}/mmi-config`).then(res => setMmiConfig(res.data)).catch(() => {});
-  }, []);
 
   function MapClickHandler() {
     useMapEvents({

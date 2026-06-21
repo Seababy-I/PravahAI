@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import API_BASE from "../api/client";
 import { Brain, ArrowRight } from "lucide-react";
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, BarChart, Bar, Cell } from "recharts";
-
-const BAND_COLOR: Record<string,string> = {
-  Critical:"#ef4444", High:"#f97316", Medium:"#f59e0b", Low:"#10b981",
-};
+import { XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar, Cell } from "recharts";
 const DARK_TIP = {
   contentStyle:{background:"#131c2e",border:"1px solid #1e2d47",borderRadius:8,color:"#f1f5f9",fontSize:12}
 };

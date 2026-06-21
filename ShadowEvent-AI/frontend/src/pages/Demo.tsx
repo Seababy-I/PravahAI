@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import API_BASE from "../api/client";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
 const BAND_COLOR: Record<string, string> = {
   Critical: "#ef4444", High: "#f97316", Medium: "#f59e0b", Low: "#10b981",
