@@ -170,12 +170,12 @@ def run_whatif(lat: float, lon: float, event_type: str,
         "nearby_incidents": nearby[[
             "id", "corridor", "event_cause", "day_name", "time_bucket_ist",
             "distance_km", "priority", "start_datetime", "address"
-        ]].head(20).to_dict("records") if len(nearby) else [],
+        ]].replace({np.nan: None}).head(20).to_dict("records") if len(nearby) else [],
         "nearby_count": len(nearby),
         "cause_analogs": analogs[[
             "id", "corridor", "event_cause", "day_name", "time_bucket_ist",
             "priority", "start_datetime", "address"
-        ]].head(10).to_dict("records") if len(analogs) else [],
+        ]].replace({np.nan: None}).head(10).to_dict("records") if len(analogs) else [],
         "affected_corridors": affected,
         "top_nearby_causes": top_causes,
         "top_nearby_time_buckets": top_buckets,

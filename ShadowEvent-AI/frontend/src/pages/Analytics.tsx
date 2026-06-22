@@ -38,7 +38,7 @@ export default function Analytics() {
   if (loading) return (
     <div className="loading-wrapper">
       <div className="spinner" />
-      <span style={{ color: "var(--text-secondary)" }}>Loading Analyticsâ€¦</span>
+      <span style={{ color: "var(--text-secondary)" }}>Loading Analytics...</span>
     </div>
   );
 
@@ -66,7 +66,7 @@ export default function Analytics() {
           <div className="page-title">
             Historical Analytics
           </div>
-          <div className="page-subtitle">ASTRAM Dataset Â· Nov 2023 â€“ Apr 2024 Â· Bengaluru</div>
+          <div className="page-subtitle">ASTRAM Dataset · Nov 2023 – Apr 2024 · Bengaluru</div>
         </div>
         <div className="ai-status-pill">
           <div className="ai-status-dot" />
@@ -78,15 +78,15 @@ export default function Analytics() {
         {/* KPI Cards */}
         <div className="kpi-grid">
           {[
-            { label: "Total Incidents", value: stats?.total_incidents?.toLocaleString(), color: "blue", icon: "âš¡", sub: "Across all corridors" },
-            { label: "Shadow Events", value: stats?.total_shadow_events?.toLocaleString(), color: "purple", icon: "ðŸ‘", sub: "Recurring patterns found" },
-            { label: "High Risk Events", value: stats?.high_risk_events, color: "red", icon: "ðŸ”´", sub: "Immediate attention needed" },
-            { label: "Active Corridors", value: stats?.active_corridors, color: "green", icon: "ðŸ›£", sub: "Monitored routes" },
-            { label: "Top Cause", value: stats?.top_cause?.replace(/_/g, " "), color: "orange", icon: "âš ", sub: "Most frequent incident" },
+            { label: "Total Incidents", value: stats?.total_incidents?.toLocaleString(), color: "blue", icon: "⚡", sub: "Across all corridors" },
+            { label: "Shadow Events", value: stats?.total_shadow_events?.toLocaleString(), color: "purple", icon: "👻", sub: "Recurring patterns found" },
+            { label: "High Risk Events", value: stats?.high_risk_events, color: "red", icon: "🔴", sub: "Immediate attention needed" },
+            { label: "Active Corridors", value: stats?.active_corridors, color: "green", icon: "🛣️", sub: "Monitored routes" },
+            { label: "Top Cause", value: stats?.top_cause?.replace(/_/g, " "), color: "orange", icon: "⚠️", sub: "Most frequent incident" },
           ].map(({ label, value, color, icon, sub }) => (
             <div key={label} className={`kpi-card ${color}`}>
               <div className="kpi-label">{label}</div>
-              <div className="kpi-value">{value ?? "â€”"}</div>
+              <div className="kpi-value">{value ?? "—"}</div>
               <div className="kpi-sub">{sub}</div>
               <div className="kpi-icon">{icon}</div>
             </div>
@@ -140,7 +140,7 @@ export default function Analytics() {
 
         {/* Hour Distribution */}
         <div className="card" style={{ marginBottom: 20 }}>
-          <div className="card-title">Hourly Incident Distribution (0â€“23 hrs)</div>
+          <div className="card-title">Hourly Incident Distribution (0–23 hrs)</div>
           <div className="chart-wrap" style={{ height: 220 }}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={hourData} barSize={16}>

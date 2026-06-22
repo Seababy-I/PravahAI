@@ -145,10 +145,10 @@ export default function SimilarityExplorer() {
                       <div style={{ fontSize: 20, fontWeight: 800, color: "var(--text-muted)", minWidth: 24 }}>#{e.rank}</div>
                       <div style={{ flex: 1 }}>
                         <div style={{ fontWeight: 600, fontSize: 13 }}>
-                          {e.event_cause?.replace(/_/g, " ")} Â· {e.corridor}
+                          {e.event_cause?.replace(/_/g, " ")} · {e.corridor}
                         </div>
                         <div style={{ fontSize: 11, color: "var(--text-muted)", marginTop: 3 }}>
-                          {e.day_name} Â· {e.time_bucket?.replace(/_/g, " ")} Â· {e.start_datetime_ist || `${e.hour}:00`}
+                          {e.day_name} · {e.time_bucket?.replace(/_/g, " ")} · {e.start_datetime_ist || `${e.hour}:00`}
                         </div>
                         <div style={{ fontSize: 11, color: "var(--text-muted)" }}>{e.address?.slice(0, 60)}</div>
                       </div>

@@ -305,7 +305,7 @@ export default function WhatIf() {
                           <span style={{fontSize:11,color:"var(--text-muted)"}}>{inc.distance_km} km</span>
                         </div>
                         <div style={{fontSize:11,color:"var(--text-muted)",marginTop:3}}>
-                          {inc.corridor} Â· {inc.day_name} Â· {inc.time_bucket_ist?.replace(/_/g," ")}
+                          {inc.corridor} · {inc.day_name} · {inc.time_bucket_ist?.replace(/_/g," ")}
                         </div>
                         <div style={{fontSize:10,color:"var(--text-muted)",marginTop:2,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
                           {inc.address}
@@ -319,7 +319,7 @@ export default function WhatIf() {
 
             <div className="card">
               <div className="section-title" style={{marginBottom:12}}>
-                Same-Type Historical Analogs (same event type Â· same day)
+                Same-Type Historical Analogs (same event type · same day)
               </div>
               {result.cause_analogs?.length === 0
                 ? <div style={{color:"var(--text-muted)"}}>No analogs found.</div>
@@ -332,10 +332,10 @@ export default function WhatIf() {
                       }}>
                         <div style={{fontWeight:600,fontSize:12}}>{inc.event_cause?.replace(/_/g," ")}</div>
                         <div style={{fontSize:11,color:"var(--text-muted)",marginTop:3}}>
-                          {inc.corridor} Â· {inc.day_name}
+                          {inc.corridor} · {inc.day_name}
                         </div>
                         <div style={{fontSize:10,color:"var(--text-muted)",marginTop:2}}>
-                          Priority: <b>{inc.priority}</b> Â· {inc.time_bucket_ist?.replace(/_/g," ")}
+                          Priority: <b>{inc.priority}</b> · {inc.time_bucket_ist?.replace(/_/g," ")}
                         </div>
                       </div>
                     ))}
@@ -350,7 +350,7 @@ export default function WhatIf() {
                 border:"1px solid var(--border)",fontSize:11,color:"var(--text-muted)",
               }}>
                 <b>Methodology:</b> {result.methodology?.label}<br/>
-                Radius: {result.methodology?.nearby_radius_km} km Â·
+                Radius: {result.methodology?.nearby_radius_km} km ·
                 Multiplier rationale: {result.methodology?.multiplier_rationale}<br/>
                 <span style={{color:"var(--accent-red)"}}>
                   Limitation: {result.methodology?.limitation}

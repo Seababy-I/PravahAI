@@ -11,13 +11,13 @@ const DARK_TIP = {
 };
 
 const DEMO_STEPS = [
-  { id: 1, label: "City Risk Overview", icon: "ðŸ™ï¸" },
-  { id: 2, label: "Top Shadow Events", icon: "ðŸ‘ï¸" },
-  { id: 3, label: "Weekly Forecast", icon: "ðŸ“…" },
-  { id: 4, label: "What-If Simulator", icon: "ðŸ§ª" },
-  { id: 5, label: "Learning Engine", icon: "ðŸ§ " },
-  { id: 6, label: "MapMyIndia Context", icon: "ðŸ—ºï¸" },
-  { id: 7, label: "Methodology", icon: "ðŸ“–" },
+  { id: 1, label: "City Risk Overview", icon: "🏙️" },
+  { id: 2, label: "Top Shadow Events", icon: "👁️" },
+  { id: 3, label: "Weekly Forecast", icon: "📅" },
+  { id: 4, label: "What-If Simulator", icon: "🧪" },
+  { id: 5, label: "Learning Engine", icon: "🧠" },
+  { id: 6, label: "MapMyIndia Context", icon: "🗺️" },
+  { id: 7, label: "Methodology", icon: "📖" },
 ];
 
 export default function Demo() {
@@ -69,12 +69,12 @@ export default function Demo() {
               letterSpacing: "-0.03em",
             }}>Interactive Demo</div>
             <div style={{ fontSize: 14, color: "var(--text-muted)", marginTop: 2 }}>
-              Urban Traffic Intelligence Platform Â· Bengaluru
+              Urban Traffic Intelligence Platform · Bengaluru
             </div>
           </div>
           <div style={{ fontSize: 12, color: "var(--text-muted)", textAlign: "right" }}>
             <div style={{ color: "#9D5FF5", fontWeight: 700, marginBottom: 4 }}>LIVE DEMO MODE</div>
-            Nov 2023 â€“ Apr 2024 Â· {stats?.total_incidents?.toLocaleString()} incidents Â· {stats?.total_weeks_in_data} weeks
+            Nov 2023 – Apr 2024 · {stats?.total_incidents?.toLocaleString()} incidents · {stats?.total_weeks_in_data} weeks
           </div>
         </div>
 
@@ -98,11 +98,11 @@ export default function Demo() {
 
       <div style={{ padding: "0 32px 40px" }}>
 
-        {/* STEP 1 â€” City Overview */}
+        {/* STEP 1 — City Overview */}
         {step === 1 && (
           <div className="fade-in">
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", marginBottom: 20 }}>
-              ðŸ™ï¸ City Risk Overview
+              🏙️ City Risk Overview
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 16, marginBottom: 24 }}>
               {[
@@ -149,11 +149,11 @@ export default function Demo() {
           </div>
         )}
 
-        {/* STEP 2 â€” Top Shadow Events */}
+        {/* STEP 2 — Top Shadow Events */}
         {step === 2 && (
           <div className="fade-in">
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", marginBottom: 20 }}>
-              ðŸ‘ï¸ Top Shadow Events by SERI
+              👁️ Top Shadow Events by SERI
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 16 }}>
               {shadows.slice(0, 8).map((se: any, i: number) => (
@@ -164,10 +164,10 @@ export default function Demo() {
                   <div>
                     <div style={{ fontWeight: 700, color: "var(--text-primary)", marginBottom: 4 }}>{se.corridor}</div>
                     <div style={{ fontSize: 12, color: "var(--text-muted)" }}>
-                      {se.day_name} Â· {se.time_bucket?.replace(/_/g, " ")}
+                      {se.day_name} · {se.time_bucket?.replace(/_/g, " ")}
                     </div>
                     <div style={{ fontSize: 11, color: "var(--text-muted)", marginTop: 2 }}>
-                      {se.incident_count} incidents Â· {(se.recurrence_score * 100).toFixed(0)}% recurrence
+                      {se.incident_count} incidents · {(se.recurrence_score * 100).toFixed(0)}% recurrence
                     </div>
                     <span className={`risk-badge ${se.seri_band}`} style={{ marginTop: 6, display: "inline-block" }}>{se.seri_band}</span>
                   </div>
@@ -179,19 +179,19 @@ export default function Demo() {
               ))}
             </div>
             <div style={{ marginTop: 16, fontSize: 12, color: "var(--text-muted)", textAlign: "center" }}>
-              SERI = 0.4Ã—Recurrence + 0.4Ã—Frequency + 0.2Ã—Severity Â· Scale 0â€“100
+              SERI = 0.4×Recurrence + 0.4×Frequency + 0.2×Severity · Scale 0–100
             </div>
           </div>
         )}
 
-        {/* STEP 3 â€” Forecast */}
+        {/* STEP 3 — Forecast */}
         {step === 3 && (
           <div className="fade-in">
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", marginBottom: 4 }}>
-              ðŸ“… Weekly Risk Forecast
+              📅 Weekly Risk Forecast
             </div>
             <div style={{ fontSize: 12, color: "var(--accent-yellow)", marginBottom: 20, fontWeight: 600 }}>
-              Historical Pattern-Based Forecast â€” NOT real-time prediction Â· MAE = {forecast?.metadata?.validation_mae ? `${(forecast.metadata.validation_mae * 100).toFixed(2)}%` : "â€”"}
+              Historical Pattern-Based Forecast — NOT real-time prediction · MAE = {forecast?.metadata?.validation_mae ? `${(forecast.metadata.validation_mae * 100).toFixed(2)}%` : "—"}
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(7,1fr)", gap: 10, marginBottom: 24 }}>
               {dayRisk.map(({ day, score, band }) => (
@@ -234,14 +234,14 @@ export default function Demo() {
           </div>
         )}
 
-        {/* STEP 4 â€” What-If (static demo) */}
+        {/* STEP 4 — What-If (static demo) */}
         {step === 4 && (
           <div className="fade-in">
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", marginBottom: 4 }}>
-              ðŸ§ª What-If Event Simulator
+              🧪 What-If Event Simulator
             </div>
             <div style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 20 }}>
-              Historical analog lookup â€” NOT a traffic simulation
+              Historical analog lookup — NOT a traffic simulation
             </div>
             <div className="grid-2">
               <div className="card">
@@ -251,7 +251,7 @@ export default function Demo() {
                   ["Step 1", "Find all historical incidents within 2 km (haversine)"],
                   ["Step 2", "Find historical incidents of same type on same day-of-week"],
                   ["Step 3", "Look up SERI of affected named corridors"],
-                  ["Step 4", "Apply attendance multiplier: SÃ—1.0, MÃ—1.3, LÃ—1.7"],
+                  ["Step 4", "Apply attendance multiplier: S×1.0, M×1.3, L×1.7"],
                   ["Output", "Estimated SERI per corridor + historical analogs"],
                 ].map(([k, v]) => (
                   <div key={k} style={{ display: "flex", gap: 12, marginBottom: 12, fontSize: 13 }}>
@@ -279,7 +279,7 @@ export default function Demo() {
                       <div>
                         <div style={{ fontWeight: 700 }}>{c.corridor}</div>
                         <div style={{ fontSize: 11, color: "var(--text-muted)", marginTop: 4 }}>
-                          Base SERI: {c.base} Ã— 1.7 (large)
+                          Base SERI: {c.base} × 1.7 (large)
                         </div>
                       </div>
                       <div style={{ textAlign: "right" }}>
@@ -290,32 +290,32 @@ export default function Demo() {
                   </div>
                 ))}
                 <div style={{ fontSize: 11, color: "var(--text-muted)", marginTop: 4 }}>
-                  * Illustrative example â€” run live simulation in What-If page
+                  * Illustrative example — run live simulation in What-If page
                 </div>
               </div>
             </div>
           </div>
         )}
 
-        {/* STEP 5 â€” Learning Engine */}
+        {/* STEP 5 — Learning Engine */}
         {step === 5 && (
           <div className="fade-in">
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", marginBottom: 4 }}>
-              ðŸ§  Adaptive Learning Engine
+              🧠 Adaptive Learning Engine
             </div>
             <div style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 20 }}>
-              Feedback-driven audit loop â€” not ML weight training
+              Feedback-driven audit loop — not ML weight training
             </div>
             <div className="card" style={{ marginBottom: 16 }}>
               <div className="section-title" style={{ marginBottom: 14 }}>Learning Loop Architecture</div>
               <div style={{ display: "flex", gap: 0, alignItems: "center", flexWrap: "wrap" }}>
-                {["Forecast Score", "â†’", "Actual Event (held-out or user-marked)", "â†’", "Error = |forecast - actual| / forecast Ã— 100", "â†’", "Store in DB", "â†’", "Surface corridor bias"].map((s, i) => (
+                {["Forecast Score", "→", "Actual Event (held-out or user-marked)", "→", "Error = |forecast - actual| / forecast × 100", "→", "Store in DB", "→", "Surface corridor bias"].map((s, i) => (
                   <div key={i} style={{
-                    padding: s === "â†’" ? "0 8px" : "12px 14px",
-                    background: s === "â†’" ? "transparent" : "var(--bg-secondary)",
-                    border: s === "â†’" ? "none" : "1px solid var(--border)",
-                    borderRadius: 8, color: s === "â†’" ? "var(--accent-cyan)" : "var(--text-secondary)",
-                    fontSize: s === "â†’" ? 20 : 11, margin: "4px 2px",
+                    padding: s === "→" ? "0 8px" : "12px 14px",
+                    background: s === "→" ? "transparent" : "var(--bg-secondary)",
+                    border: s === "→" ? "none" : "1px solid var(--border)",
+                    borderRadius: 8, color: s === "→" ? "var(--accent-cyan)" : "var(--text-secondary)",
+                    fontSize: s === "→" ? 20 : 11, margin: "4px 2px",
                   }}>{s}</div>
                 ))}
               </div>
@@ -336,11 +336,11 @@ export default function Demo() {
           </div>
         )}
 
-        {/* STEP 6 â€” MapMyIndia */}
+        {/* STEP 6 — MapMyIndia */}
         {step === 6 && (
           <div className="fade-in">
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", marginBottom: 4 }}>
-              ðŸ—ºï¸ MapMyIndia Live Context Layer
+              🗺️ MapMyIndia Live Context Layer
             </div>
             <div style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 20 }}>
               Historical Intelligence + MapMyIndia Context = Operational Intelligence
@@ -353,7 +353,7 @@ export default function Demo() {
                   background: mmi?.valid ? "rgba(16,185,129,0.08)" : "rgba(245,158,11,0.08)",
                   border: `1px solid ${mmi?.valid ? "#10b981" : "#f59e0b"}40`, borderRadius: 8, marginBottom: 16
                 }}>
-                  <span style={{ fontSize: 28 }}>{mmi?.valid ? "âœ…" : "âš™ï¸"}</span>
+                  <span style={{ fontSize: 28 }}>{mmi?.valid ? "✅" : "âš™ï¸"}</span>
                   <div>
                     <div style={{ fontWeight: 700, color: mmi?.valid ? "#10b981" : "var(--accent-yellow)" }}>
                       {mmi?.valid ? "MapMyIndia Connected" : "MapMyIndia Ready (Key Required)"}
@@ -371,7 +371,7 @@ export default function Demo() {
                 <div style={{ fontSize: 11, color: "var(--text-muted)" }}>
                   Tile URL template:<br />
                   <code style={{ fontSize: 10, wordBreak: "break-all", color: "var(--accent-cyan)" }}>
-                    {mmi?.tile_url || "â€”"}
+                    {mmi?.tile_url || "—"}
                   </code>
                 </div>
               </div>
@@ -390,37 +390,37 @@ export default function Demo() {
           </div>
         )}
 
-        {/* STEP 7 â€” Methodology summary */}
+        {/* STEP 7 — Methodology summary */}
         {step === 7 && (
           <div className="fade-in">
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--text-primary)", marginBottom: 20 }}>
-              ðŸ“– System Methodology Summary
+              📖 System Methodology Summary
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
               {[
                 {
                   title: "SERI Formula", color: "#3b82f6",
-                  content: "0.4Ã—Recurrence + 0.4Ã—Frequency + 0.2Ã—Severity â†’ scale 0â€“100"
+                  content: "0.4×Recurrence + 0.4×Frequency + 0.2×Severity → scale 0–100"
                 },
                 {
                   title: "Forecast Formula", color: "#8b5cf6",
-                  content: "0.7Ã—Recurrence + 0.3Ã—Recent Trend (last 4 weeks)\nMAE: 13.75% on held-out weeks"
+                  content: "0.7×Recurrence + 0.3×Recent Trend (last 4 weeks)\nMAE: 13.75% on held-out weeks"
                 },
                 {
                   title: "KNN Similarity", color: "#06b6d4",
-                  content: "BallTree Â· Euclidean Â· k=10\nFeatures: lat, lon, hour_IST, day, cause, corridor\nNormalised: StandardScaler"
+                  content: "BallTree · Euclidean · k=10\nFeatures: lat, lon, hour_IST, day, cause, corridor\nNormalised: StandardScaler"
                 },
                 {
                   title: "DBSCAN Hotspots", color: "#f59e0b",
-                  content: "eps=0.008Â° (~890m) Â· min_samples=10\n14 clusters found in dataset"
+                  content: "eps=0.008Â° (~890m) · min_samples=10\n14 clusters found in dataset"
                 },
                 {
                   title: "Shadow Events", color: "#10b981",
-                  content: "666 total (corridor Ã— day Ã— IST time bucket)\n4 Critical Â· 11 High Â· 48 Medium Â· 603 Low"
+                  content: "666 total (corridor × day × IST time bucket)\n4 Critical · 11 High · 48 Medium · 603 Low"
                 },
                 {
                   title: "Honest Labeling", color: "#ef4444",
-                  content: "All forecasts marked 'Historical Pattern-Based'\nNo real-time data Â· No vehicle simulation\nAssumptions fully documented"
+                  content: "All forecasts marked 'Historical Pattern-Based'\nNo real-time data · No vehicle simulation\nAssumptions fully documented"
                 },
               ].map(({ title, color, content }) => (
                 <div key={title} className="card" style={{ borderTop: `3px solid ${color}` }}>
@@ -441,7 +441,7 @@ export default function Demo() {
           <div style={{ fontSize: 12, color: "var(--text-muted)" }}>Step {step} of {DEMO_STEPS.length}</div>
           <button className="btn-primary"
             onClick={() => setStep(s => Math.min(DEMO_STEPS.length, s + 1))} disabled={step === DEMO_STEPS.length}>
-            Next â†’
+            Next →
           </button>
         </div>
       </div>
