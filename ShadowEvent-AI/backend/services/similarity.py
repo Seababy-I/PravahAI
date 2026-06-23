@@ -63,9 +63,7 @@ def fit_knn_index(
         algorithm="ball_tree")
     knn.fit(matrix)
     print(
-        f"[similarity] KNN index fitted on {
-            matrix.shape[0]} samples with {
-            matrix.shape[1]} features")
+    f"[similarity] KNN index fitted on {matrix.shape[0]} samples with {matrix.shape[1]} features")
     return knn
 
 
