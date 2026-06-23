@@ -159,10 +159,18 @@ def get_dashboard_stats(named_only: bool = True):
     top_seri = shadow_df.nlargest(1, "seri").iloc[0] if (
         shadow_df is not None and "seri" in shadow_df.columns and len(shadow_df)) else None
 
+    forecast_high = 0
+    if _forecast is not None:
+        fc = _forecast.get("forecast", [])
+        if named_only:
+            fc = [r for r in fc if r.get("corridor") != "Non-corridor"]
+        forecast_high = len([r for r in fc if r.get("forecast_band", "") in ["High", "Critical"]])
+
     return {
         "total_incidents": len(feat_df),
         "total_shadow_events": len(shadow_df) if shadow_df is not None else 0,
         "high_risk_events": high_seri,
+        "forecast_high_risk": forecast_high,
         "critical_seri_slots": critical_seri,
         "active_corridors": int(feat_df["corridor"].nunique()),
         "named_corridors": int(feat_df[feat_df["is_named_corridor"] == 1]["corridor"].nunique()) if "is_named_corridor" in feat_df.columns else 0,
@@ -470,6 +478,23 @@ def get_forecast(
 
     if named_only:
         data = [r for r in data if r.get("corridor") != "Non-corridor"]
+        import copy
+        weekly = copy.deepcopy(weekly)
+        for day, buckets in weekly.items():
+            for bucket, b_data in buckets.items():
+                if "top_corridors" in b_data:
+                    filtered_corridors = [
+                        c for c in b_data["top_corridors"]
+                        if c.get("corridor") != "Non-corridor"
+                    ]
+                    b_data["top_corridors"] = filtered_corridors
+                    if filtered_corridors:
+                        top = filtered_corridors[0]
+                        b_data["max_score"] = float(top.get("forecast_score", 0.0))
+                        b_data["risk_level"] = top.get("forecast_band", "Low")
+                    else:
+                        b_data["max_score"] = 0.0
+                        b_data["risk_level"] = "Low"
     if day:
         data = [
             r for r in data if r.get(

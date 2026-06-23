@@ -332,7 +332,7 @@ export default function Dashboard() {
                       <div className="intel-stat-label">Active Corridors</div>
                     </div>
                     <div className="intel-stat">
-                      <div className="intel-stat-val" style={{ color: "#ef4444" }}>{stats.high_risk_events}</div>
+                      <div className="intel-stat-val" style={{ color: "#ef4444" }}>{stats.forecast_high_risk ?? stats.high_risk_events}</div>
                       <div className="intel-stat-label">High Risk</div>
                     </div>
                     <div className="intel-stat">
