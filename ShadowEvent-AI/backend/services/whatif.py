@@ -188,16 +188,16 @@ def run_whatif(lat: float, lon: float, event_type: str,
             "limitation": "Does not model vehicles, signal timing, or diversion routes.",
         },
     }
-
-
 if __name__ == "__main__":
     result = run_whatif(
-        lat=12.9352, lon=77.6245,
+        lat=12.9352,
+        lon=77.6245,
         event_type="public_event",
         attendance="large",
         day_of_week=6,
         event_name="Test Public Event"
     )
-   print(
-    f"Nearby: {result['nearby_count']}, Corridors affected: {len(result['affected_corridors'])}"
-)
+
+    print(
+        f"Nearby: {result['nearby_count']}, Corridors affected: {len(result['affected_corridors'])}"
+    )
