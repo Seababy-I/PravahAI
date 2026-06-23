@@ -198,8 +198,6 @@ if __name__ == "__main__":
         day_of_week=6,
         event_name="Test Public Event"
     )
-    print(
-        f"Nearby: {
-            result['nearby_count']}, Corridors affected: {
-            len(
-                result['affected_corridors'])}")
+   print(
+    f"Nearby: {result['nearby_count']}, Corridors affected: {len(result['affected_corridors'])}"
+)
