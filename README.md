@@ -265,7 +265,7 @@ npm run dev
 
 # Contributors
 
-**Priyali Jain**
+**Priyali Jain,**
 
 
 **Shaunak Mohagaonkar**
