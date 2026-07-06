@@ -1,6 +1,6 @@
 # PravahAI – Intelligent Traffic Forecasting and Decision Support System
 
-PravahAI is a full-stack intelligent traffic analytics platform developed for **Flipkart GRiDLOCK 2.0**. The system transforms historical traffic incident data into actionable intelligence by identifying recurring traffic patterns, forecasting future congestion risks, detecting geographical hotspots, and providing AI-assisted operational recommendations for traffic management authorities. The project combines machine learning, spatial analytics, predictive modeling, and modern web technologies to support proactive traffic planning rather than reactive incident management. :contentReference[oaicite:0]{index=0}
+PravahAI is a full-stack intelligent traffic analytics platform developed for **Flipkart GRiDLOCK 2.0**. The system transforms historical traffic incident data into actionable intelligence by identifying recurring traffic patterns, forecasting future congestion risks, detecting geographical hotspots, and providing AI-assisted operational recommendations for traffic management authorities. The project combines machine learning, spatial analytics, predictive modeling, and modern web technologies to support proactive traffic planning rather than reactive incident management. 
 
 ---
 
@@ -14,7 +14,7 @@ PravahAI is a full-stack intelligent traffic analytics platform developed for **
 
 Traffic control systems typically respond after congestion has already occurred. Many incidents classified as "unplanned" actually follow recurring spatial and temporal patterns that remain undiscovered.
 
-PravahAI identifies these hidden recurring patterns ("Shadow Events") and forecasts future congestion risk to assist traffic authorities in proactive planning and resource allocation. :contentReference[oaicite:1]{index=1}
+PravahAI identifies these hidden recurring patterns ("Shadow Events") and forecasts future congestion risk to assist traffic authorities in proactive planning and resource allocation.
 
 ---
 
@@ -36,7 +36,7 @@ Introduces a custom composite risk score based on
 - Frequency
 - Severity
 
-to rank recurring traffic events according to operational impact. :contentReference[oaicite:2]{index=2}
+to rank recurring traffic events according to operational impact. 
 
 ---
 
@@ -45,7 +45,7 @@ to rank recurring traffic events according to operational impact. :contentRefere
 - Predicts future congestion risk
 - Uses historical recurrence patterns
 - Temporal validation using hold-out evaluation
-- Mean Absolute Error: **0.1375** :contentReference[oaicite:3]{index=3}
+- Mean Absolute Error: **0.1375** 
 
 ---
 
@@ -68,7 +68,7 @@ to rank recurring traffic events according to operational impact. :contentRefere
 
 ## What-If Simulator
 
-Allows traffic authorities to simulate hypothetical public events and estimate congestion risk using historical incident patterns. :contentReference[oaicite:4]{index=4}
+Allows traffic authorities to simulate hypothetical public events and estimate congestion risk using historical incident patterns. 
 
 ---
 
@@ -77,7 +77,7 @@ Allows traffic authorities to simulate hypothetical public events and estimate c
 - Powered by Gemini 2.0 Flash
 - Converts analytical outputs into operational recommendations
 - Generates explainable advisory reports
-- Human-in-the-loop recommendation workflow :contentReference[oaicite:5]{index=5}
+- Human-in-the-loop recommendation workflow 
 
 ---
 
@@ -140,30 +140,27 @@ Allows traffic authorities to simulate hypothetical public events and estimate c
 # System Architecture
 
 ```
-Historical Traffic Data
+ Historical Traffic Data
             │
             ▼
 Data Cleaning & Feature Engineering
             │
             ▼
-Shadow Event Detection
+     SERI Risk Scoring
             │
             ▼
-SERI Risk Scoring
+   Shadow Event Detection
+            │
+ ┌────────┼────────────┼────────────┐
+ ▼        ▼            ▼            ▼
+Hotspots Similarity  What-If     Forecasting
+Detection Explorer   Simulator   Engine
             │
             ▼
-Forecast Engine
-            │
- ┌──────────┼──────────┐
- ▼          ▼          ▼
-Hotspots  Similarity  What-If
-Detection Explorer   Simulator
+    AI Advisory Layer
             │
             ▼
-AI Advisory Layer
-            │
-            ▼
-Interactive Dashboard
+ Interactive Dashboard
 ```
 
 ---
@@ -177,7 +174,7 @@ Interactive Dashboard
 5. DBSCAN Hotspot Clustering
 6. Forecast Generation
 7. AI Advisory Generation
-8. Dashboard Visualization :contentReference[oaicite:6]{index=6}
+8. Dashboard Visualization
 
 ---
 
@@ -237,7 +234,7 @@ npm run dev
 - Detected **14** traffic hotspot clusters
 - Designed the **SERI (Shadow Event Risk Index)** scoring methodology
 - Developed an explainable AI advisory system
-- Implemented predictive traffic forecasting with temporal validation :contentReference[oaicite:7]{index=7} :contentReference[oaicite:8]{index=8}
+- Implemented predictive traffic forecasting with temporal validation 
 
 ---
 
