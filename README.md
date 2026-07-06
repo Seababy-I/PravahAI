@@ -266,12 +266,8 @@ npm run dev
 # Contributors
 
 **Priyali Jain**
-
-Frontend Development • Product Design • User Interface • Full Stack
-
 **Shaunak Mohagaonkar**
 
-Machine Learning • Backend Development • Forecasting Engine • Analytics
 
 ---
 
