@@ -1,4 +1,4 @@
-# PravahAI – Intelligent Traffic Forecasting and Decision Support System
+# PravahAI: Intelligent Traffic Forecasting and Decision Support System
 
 PravahAI is a full-stack intelligent traffic analytics platform developed for **Flipkart GRiDLOCK 2.0**. The system transforms historical traffic incident data into actionable intelligence by identifying recurring traffic patterns, forecasting future congestion risks, detecting geographical hotspots, and providing AI-assisted operational recommendations for traffic management authorities. The project combines machine learning, spatial analytics, predictive modeling, and modern web technologies to support proactive traffic planning rather than reactive incident management. 
 
