@@ -266,10 +266,3 @@ npm run dev
 
 
 **Shaunak Mohagaonkar**
-
-
----
-
-# License
-
-This project was developed as part of **Flipkart GRiDLOCK 2.0 Hackathon** for educational and research purposes.
